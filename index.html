@@ -226,6 +226,33 @@ html:not(.js) .menu-toggle{display:none}
 @media(max-width:760px){.career-focus{padding:13px 15px;margin-top:20px}.career-focus-roles{font-size:15px}.career-focus-description{font-size:13px}}
 @media print{.career-focus{background:transparent;border-color:#333;break-inside:avoid}.career-focus-label,.career-focus-description{color:#333}.career-focus-roles{color:#111}}
 
+/* Editorial system: graphite, paper and a precise lime signal. */
+:root,:root[data-theme="dark"]{--bg:#0e1213;--surface:#171d1e;--surface-2:#20292a;--ink:#f2f3ed;--muted:#aab5b4;--subtle:#889794;--accent:#c8f68b;--accent-ink:#14220c;--line:#303b3c;--header:rgba(14,18,19,.91);--glow:rgba(173,239,112,.07);--panel:#131a1b;--gutter:clamp(24px,6vw,96px)}
+@media(prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg:#f6f7f2;--surface:#eaeee6;--surface-2:#dfe7da;--ink:#18231f;--muted:#52625b;--subtle:#627168;--accent:#3e691c;--accent-ink:#f9fff0;--line:#ccd5c8;--header:rgba(246,247,242,.93);--glow:rgba(92,149,43,.09);--panel:#eff2eb}}
+:root[data-theme="light"]{--bg:#f6f7f2;--surface:#eaeee6;--surface-2:#dfe7da;--ink:#18231f;--muted:#52625b;--subtle:#627168;--accent:#3e691c;--accent-ink:#f9fff0;--line:#ccd5c8;--header:rgba(246,247,242,.93);--glow:rgba(92,149,43,.09);--panel:#eff2eb}
+body{font-feature-settings:"ss01";background:var(--bg)}.wrap{max-width:1536px}.topbar{backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px)}.nav-inner{height:88px}.brand-mark{background:var(--accent);color:var(--accent-ink);border:0;border-radius:11px;width:42px;height:42px}.brand-copy{letter-spacing:.08em}.nav-links{padding:3px 20px;border:1px solid var(--line);border-radius:30px;gap:26px}.nav-links a{font-size:12px}.nav-links a:after{bottom:6px;left:50%;width:4px;height:4px;border-radius:50%;transform:scale(0)}.nav-links a[aria-current]:after{transform:scale(1)}.language-select,.preferences>summary{border-radius:10px;background:transparent}.nav-resume{gap:16px}.prefs-panel{border-radius:15px;box-shadow:0 22px 80px #0003}.theme-option span,.motion-control{border-radius:7px}.progress{height:2px}
+.hero{padding-top:32px;background-image:none;overflow:hidden}.hero:before{inset:0 0 0 40%;background:radial-gradient(ellipse at 65% 32%,var(--glow),transparent 65%)}.eyebrow{font-size:10px;letter-spacing:.09em}.eyebrow-left{gap:12px}.eyebrow-left .status-dot{width:5px;height:5px}.hero-grid{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(280px,.85fr);grid-template-areas:"intro portrait" "actions portrait" "meta portrait";column-gap:5vw;row-gap:0;align-items:start;padding:57px 0 48px}.hero-intro{grid-area:intro;min-width:0;padding-top:8px}h1{font-size:clamp(72px,8.4vw,126px);font-weight:500;line-height:.95;letter-spacing:-.075em}.name-line{padding-bottom:.15em;margin-bottom:-.10em;overflow:visible}.name-line:last-child{color:var(--accent)}.role{max-width:550px;font-size:clamp(22px,2vw,29px);font-weight:400;line-height:1.3;margin:29px 0 0;letter-spacing:-.035em}.hero-specialties{gap:8px 16px;font-size:10px;margin-top:22px;letter-spacing:.035em;color:var(--muted)}.hero-specialties span:before{background:var(--accent);width:3px;height:3px}.hero-buttons{grid-area:actions;margin-top:31px;gap:10px}.button{border-radius:10px;min-height:54px;padding:16px 21px;font-weight:500;transition:background .25s,color .25s,border-color .25s,box-shadow .25s}.button span,.utility-button span{transition:transform .3s cubic-bezier(.2,.7,.2,1)}.hero-buttons .button{min-height:56px;font-size:13px;gap:36px}.hero-meta{grid-area:meta}.hero-footnote{margin-top:21px;font-size:9px;letter-spacing:.035em;gap:13px}.hero-footnote span+span:before{margin-right:13px}.portrait-wrap{grid-area:portrait;position:relative;display:flex;align-items:center;justify-content:center;padding:18px 20px 0;align-self:center;isolation:isolate}.portrait{width:100%;max-width:325px;border-radius:160px 160px 14px 14px;border:1px solid var(--line);background:var(--surface);box-shadow:0 20px 55px #0002;aspect-ratio:auto;max-height:none;z-index:1;overflow:hidden}.portrait-photo{position:relative;inset:auto;width:100%;height:auto;aspect-ratio:384/467;object-fit:contain;object-position:center;filter:none;border:0}.portrait-bottom{position:relative;inset:auto;padding:17px 21px;min-height:75px;background:var(--surface);border:0;border-top:1px solid var(--line);border-radius:0;gap:10px}.portrait-bottom p{font-size:9px;letter-spacing:.05em}.portrait-bottom strong{font-weight:450;font-size:12px;display:block;margin-top:3px}.signal-visual{position:absolute;z-index:0;inset:-62px -58px -26px;pointer-events:none;transform:translateY(var(--signal-shift,0px));color:var(--accent)}.signal-visual svg{width:100%;height:100%;overflow:visible}.signal-rings{stroke:var(--line);stroke-width:1}.signal-rings circle:nth-child(2){stroke-dasharray:2 9;opacity:.65}.signal-rings circle:nth-child(3){opacity:.4}.signal-rings .signal-orbit{stroke:var(--accent);stroke-dasharray:90 510;animation:signal-orbit 22s linear infinite;transform-origin:center}.signal-nodes{fill:var(--accent)}.signal-coordinate{position:absolute;font-family:var(--mono);font-size:8px;letter-spacing:.16em;color:var(--subtle)}.signal-coordinate-top{top:8%;left:12%}.signal-coordinate-bottom{bottom:3%;right:10%}.hero-details{display:grid;grid-template-columns:1fr 1fr;gap:8vw;padding:30px 0 33px;border-top:1px solid var(--line);align-items:start}.hero-offer{font-size:15px;line-height:1.8;max-width:560px;margin:0}.hero-offer strong{font-weight:500}.career-focus{margin:0;padding:0 0 0 24px;border-left:1px solid var(--line);background:none;max-width:none}.career-focus-label{font-size:9px;letter-spacing:.08em;margin-bottom:8px}.career-focus-roles{font-size:15px;line-height:1.6;font-weight:500}.career-focus-description{font-size:12px;line-height:1.7;margin-top:6px}.hero-bottom{padding:18px 0 24px;letter-spacing:.06em;font-size:9px}.scroll-icon{border-radius:50%;width:30px;height:30px}.hero-bottom .right-note{font-size:11px;line-height:1.6}.hero-bottom .right-note br{display:none}
+.section{padding-block:112px;border-bottom:1px solid var(--line)}.section-label{font-size:10px;letter-spacing:.12em;margin-bottom:38px;gap:15px}.section-label .index{font-size:10px}.section-label:after{width:70px;background:var(--line);margin-left:12px}.section-head{margin-bottom:44px;align-items:end}h2{font-size:clamp(39px,4.1vw,64px);line-height:1.04;letter-spacing:-.058em}.section-head p{font-size:14px;line-height:1.8}.about-copy{grid-template-columns:1.12fr 1fr;gap:9vw;margin-bottom:48px}.about-statement{font-size:clamp(30px,3.2vw,48px);line-height:1.2;letter-spacing:-.04em}.about-statement .muted{color:var(--subtle)}.about-body{font-size:15px;line-height:1.85;padding-top:3px;max-width:520px}.text-link{padding-block:9px;font-size:12px}.metrics{grid-template-columns:1fr 1fr .82fr;gap:16px;border:0}.metric,.metric+.metric{padding:30px;border:1px solid var(--line);border-radius:16px;background:var(--panel);overflow:hidden}.metric-value{font-size:clamp(46px,5vw,76px);letter-spacing:-.065em;font-weight:450}.metric-label{font-size:13px;margin-top:19px}.metric-note{font-size:10px;line-height:1.8;margin-top:9px;max-width:240px}.metric:last-child{background:transparent}.metric:last-child .metric-value{color:var(--muted);font-size:clamp(43px,4.5vw,64px);padding-top:10px}.metric:last-child .metric-label{margin-top:21px}.sensor-grid{display:none}
+.experience-layout{grid-template-columns:.42fr 1fr;gap:7vw}.experience-aside{top:125px}.experience-aside h2{font-size:clamp(36px,3.7vw,58px)}.experience-aside p{font-size:13px;line-height:1.9;margin-top:22px}.experience-aside .mono{margin-top:30px;font-size:9px}.timeline{padding-left:29px;--timeline-progress:0}.timeline:before,.timeline-fill{top:32px;bottom:20px}.timeline-fill{transform:scaleY(var(--timeline-progress));background:var(--accent)}.experience-item{padding:0 0 33px 25px;margin-bottom:36px}.experience-item.current{padding:28px 30px 31px;margin-left:0;background:var(--panel);border:1px solid var(--line);border-radius:16px;margin-bottom:40px;box-shadow:inset 0 2px var(--accent)}.timeline-dot{left:-34px;top:9px}.current .timeline-dot{left:-34px;top:29px}.experience-item.current .timeline-dot:after{animation:none;inset:-5px;border-color:var(--accent);opacity:.35}.experience-date{font-size:10px;line-height:1.7;gap:10px;margin-bottom:15px}.current-label{border-radius:4px;font-size:8px;color:var(--accent);padding:3px 7px}.experience-item h3{font-size:clamp(23px,2.15vw,33px);font-weight:500;letter-spacing:-.04em}.employer{font-size:12px;line-height:1.8;margin:12px 0 23px}.experience-item li,.experience-description{font-size:13px;line-height:1.85}.experience-item li{padding-left:17px;margin-top:12px}.experience-item li:before{width:3px;height:3px;top:11px;border-radius:50%;background:var(--accent)}.experience-item li strong{font-weight:500}
+.stack-list{display:grid;grid-template-columns:1fr 1fr;gap:16px;border:0;align-items:start}.stack-row{display:block;padding:27px 29px 8px;border:1px solid var(--line);border-radius:16px;background:var(--panel);min-width:0}.stack-row:first-child{grid-column:1/-1;display:grid;grid-template-columns:.7fr 1fr;gap:32px;padding-bottom:15px;align-items:start}.stack-category{margin-bottom:0;gap:13px;font-size:17px;line-height:1.4;letter-spacing:-.025em;padding-bottom:26px;position:relative;padding-right:28px}.stack-category .mono{position:absolute;right:0;top:2px;font-size:10px}.stack-icon{width:23px;height:23px;flex:none;color:var(--accent)}.stack-row:first-child .stack-category{padding-top:5px;padding-right:38px}.stack-row:first-child .stack-category .mono{top:8px}.chips{gap:7px;perspective:none}.chip{font-size:11px;border:1px solid var(--line);border-radius:6px;padding:8px 11px;background:var(--surface);line-height:1.4;max-width:100%;overflow-wrap:anywhere}.chip small{font-size:9px;white-space:normal}.stack-use{margin-top:22px;font-size:13px;max-width:none}.stack-use summary{font-size:11px;color:var(--muted);padding:14px 0;gap:15px;min-height:48px}.stack-use summary:after{font-size:20px;font-weight:400;line-height:1}.stack-use[open] summary{color:var(--ink)}.stack-use p{line-height:1.9;padding-bottom:13px}.docs-strip{display:flex;justify-content:space-between;gap:22px;align-items:baseline;border-top:1px solid var(--line);margin-top:30px;padding-top:25px;font-size:11px}.docs-items{gap:12px 24px}.docs-items span:before{font-size:13px}.hack-section{padding-block:70px}.hack-card{grid-template-columns:1.35fr .65fr;border-radius:20px;min-height:300px;background:var(--panel)}.hack-copy{padding:38px 42px}.hack-copy .mono{font-size:9px;letter-spacing:.07em;margin-bottom:22px}.hack-copy h2{font-size:clamp(36px,4vw,57px)}.hack-copy p{font-size:13px;line-height:1.85;margin-top:20px}.hack-meta{font-size:9px;margin-top:23px;gap:14px}.hack-art{background-image:none;overflow:hidden}.hack-art:before{width:230px;height:230px}.hack-art:after{width:290px;height:290px;opacity:.6}.record-num{font-size:80px;letter-spacing:-.075em}.record-label{font-size:8px}.record-badge{font-size:7px;border-radius:4px;max-width:calc(100% - 24px);text-align:center;margin-top:22px;padding:6px 9px}
+.learning{padding-top:50px}.cert-controls .icon-button{border-radius:50%;width:46px;height:46px}.cert-search{border-radius:10px;background:var(--panel);max-width:430px;height:48px;font-size:13px}.search-label{font-size:11px}.cert-track{gap:16px;grid-auto-columns:calc((100% - 32px)/3);padding-bottom:20px}.cert-card{border-radius:16px;background:var(--panel);padding:28px;min-height:0}.cert-year{margin-bottom:30px;align-items:center}.cert-year .year{font-size:42px;letter-spacing:-.065em}.cert-year .mono{font-size:8px}.cert-card h3{font-size:23px;line-height:1.25;letter-spacing:-.035em}.cert-card ul{font-size:12px;line-height:1.85}.cert-card strong{font-size:10px}.cert-bottom{font-size:9px}.cert-hint{font-size:11px}.progress-course{font-size:12px;line-height:1.7}.education{margin-top:55px;padding:35px;border:1px solid var(--line);border-radius:16px;background:var(--panel);gap:50px;align-items:start;grid-template-columns:1fr 1.25fr}.education h3{font-size:29px;line-height:1.2}.education .section-label{font-size:9px;line-height:1.7;gap:14px}.education .section-label:after{display:none}.education .degree{font-size:13px;margin-top:12px}.thesis{margin:0;align-self:start;border-top:0}.thesis summary{padding-top:3px;font-size:13px;min-height:48px;line-height:1.7}.thesis-text,.thesis[open] .thesis-text{animation:none;opacity:1;transform:none;font-size:13px;line-height:1.9}.thesis-text p+p{margin-top:14px}.languages{padding-top:25px;margin-top:30px;font-size:12px;line-height:1.8}.languages>.mono{font-size:10px}.language-list{gap:30px}
+.contact{padding-block:100px 35px}.contact:before{width:760px;height:760px;right:-230px;top:-130px;opacity:.85}.contact-title{font-size:clamp(42px,6.2vw,92px);line-height:1.08;letter-spacing:-.055em;max-width:1180px}.contact-title a{background:none}.contact-title .accent{display:block}.contact-title .arrow{font-size:.66em;vertical-align:middle}.contact-row{margin-top:43px}.contact-actions{display:flex;gap:10px;width:100%}.contact-actions .button{font-size:12px;min-height:56px}.contact-actions .button:nth-child(-n+2){background:var(--accent);color:var(--accent-ink);border-color:var(--accent);min-width:170px}.contact-actions .button:nth-child(n+3){background:var(--surface)}.contact-actions .button:last-child{margin-left:auto}.contact-utils{border-top:1px solid var(--line);margin-top:29px;padding-top:21px;gap:12px 23px}.utility-button{border:0;padding:7px 0;background:none;font-size:11px;min-height:44px;justify-content:start;color:var(--muted)}.contact-details{font-size:11px;margin-top:17px;gap:25px}.footer{margin-top:55px;padding-top:24px;font-size:11px;align-items:center}.footer .brand-mark{border-radius:9px;width:38px;height:38px;font-size:16px}.footer-right{font-size:11px}.footer-left .mono{font-size:9px}.footer-code{font-size:10px;margin-top:3px}.contact-utils,.contact-details,.contact-row,.footer{position:relative}.copy-dialog{border-radius:16px}.copy-dialog input{border-radius:8px}.toast{border-radius:10px}
+[data-surface]{position:relative;isolation:isolate}[data-surface]:before{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;z-index:-1;background:radial-gradient(350px circle at var(--pointer-x,50%) var(--pointer-y,0%),var(--glow),transparent 80%);opacity:0;transition:opacity .35s}.reveal-pending,.reveal-visible{opacity:1;transform:none;transition:none}.motion-paused .signal-rings .signal-orbit{animation:none}html.motion-paused{scroll-behavior:auto}.motion-paused *, .motion-paused *:before,.motion-paused *:after{animation:none!important;transition:none!important}.motion-control:disabled{opacity:.7}.timeline-fill{will-change:auto}
+@keyframes signal-orbit{to{transform:rotate(360deg)}}
+@media(hover:hover) and (pointer:fine){[data-surface]:hover:before{opacity:1}.button:hover span,.utility-button:hover span{transform:translate(3px,-2px)}.button[href$=".pdf"]:hover span{transform:translateY(3px)}.contact-actions .button:nth-child(-n+2):hover{background:var(--ink);border-color:var(--ink);color:var(--bg)}.utility-button:hover{color:var(--ink)}.portrait{transition:box-shadow .5s}.portrait:hover{box-shadow:0 22px 70px #0003}}
+@media(min-width:1600px){.hero-grid{padding-block:66px 54px}.hero{padding-top:38px}.portrait{max-width:355px}.signal-visual{inset:-65px -70px -35px}}
+@media(max-width:1180px){.nav-links{gap:17px;padding-inline:17px}.nav-inner{gap:18px}.brand-copy{display:none}.hero-grid{column-gap:30px;grid-template-columns:minmax(0,1.35fr) minmax(270px,.85fr)}h1{font-size:8.8vw}.portrait-wrap{padding-inline:15px}.portrait{max-width:300px}.signal-visual{inset:-50px -35px -28px}.hero-offer{font-size:14px}.hero-details{gap:45px}.contact-actions{flex-wrap:wrap}.contact-actions .button:last-child{margin-left:0}.contact-actions .button:nth-child(-n+2){min-width:150px}.cert-track{grid-auto-columns:calc((100% - 16px)/2)}.experience-layout{gap:40px}.stack-category{font-size:16px}.record-num{font-size:65px}}
+@media(min-width:761px) and (max-width:950px){.nav-inner{gap:12px}.nav-links{gap:15px;padding-inline:16px}.nav-links a{font-size:11px}.nav-resume{display:none}.hero-grid{column-gap:25px;grid-template-columns:minmax(0,1.3fr) minmax(235px,.85fr);padding-top:44px}.hero-intro{padding-top:4px}.role{font-size:22px}.hero-specialties{font-size:9px;gap:8px 12px}.hero-buttons .button{font-size:11px;padding:14px;gap:14px}.portrait-wrap{padding-inline:10px}.portrait-bottom{padding:14px}.portrait-bottom p{font-size:8px}.portrait-bottom strong{font-size:10px}.hero-footnote{font-size:8px;gap:8px}.hero-footnote span+span:before{margin-right:8px}.hero-details{gap:28px}.career-focus{padding-left:18px}.career-focus-roles{font-size:13px}.section{padding-block:80px}.metric,.metric+.metric{padding:23px}.metrics{gap:12px}.metric-note{font-size:9px}.about-copy{gap:45px}.experience-layout{grid-template-columns:.42fr 1fr;gap:28px}.experience-item.current{padding:24px}.experience-aside h2{font-size:34px}.stack-row{padding:23px 23px 8px}.stack-row:first-child{grid-template-columns:1fr 1.2fr;gap:25px}.stack-category{font-size:15px;gap:10px}.stack-icon{width:20px;height:20px}.hack-copy{padding:30px}.education{padding:29px;gap:30px}.record-badge{font-size:6px}.contact-actions .button{gap:14px}}
+@media(max-width:760px){
+ .wrap{padding-inline:max(22px,env(safe-area-inset-left)) max(22px,env(safe-area-inset-right))}.nav-inner{min-height:70px;height:auto;padding-block:9px}.brand-mark{width:38px;height:38px;border-radius:10px}.nav-links{padding:12px 22px;border:0;border-bottom:1px solid var(--line);border-radius:0;gap:2px}.nav-links a{font-size:15px;min-height:48px;padding:13px 0}.nav-links a:after{left:auto;right:0;bottom:21px}.nav-actions{gap:6px}.language-select{min-width:64px;padding:0 8px;font-size:10px}.menu-toggle{border-radius:9px;padding-inline:10px}.preferences>summary{border-radius:9px}.prefs-panel{right:-81px}.hero{padding-top:21px}.eyebrow{font-size:8px;line-height:1.6;letter-spacing:.06em;gap:12px}.eyebrow-left{gap:8px;max-width:60%}.eyebrow .location{font-size:8px;display:block;text-align:right;max-width:36%}.hero-grid{grid-template-columns:minmax(0,1fr);grid-template-areas:"intro" "actions" "portrait" "meta";padding:34px 0 28px;gap:0}.hero-intro{padding:0}h1{font-size:clamp(45px,12.7vw,91px);line-height:.98;letter-spacing:-.068em}.role{font-size:clamp(20px,5.2vw,27px);line-height:1.3;margin-top:23px;max-width:520px}.hero-specialties{font-size:9px;gap:7px 11px;margin-top:16px}.hero-buttons{display:grid;grid-template-columns:1fr 1fr;margin-top:25px;gap:8px;width:100%}.hero-buttons .button,.hero-buttons .button:not(.button-primary){font-size:11px;padding:14px 15px;gap:8px;min-height:52px;border-radius:10px;justify-content:space-between}.portrait-wrap{margin:35px auto 0;width:min(100%,330px);padding:0 38px;align-self:start}.portrait{max-width:255px;box-shadow:0 14px 35px #0002;border-radius:130px 130px 12px 12px;aspect-ratio:auto}.portrait-bottom{min-height:66px;padding:13px 15px;inset:auto}.portrait-bottom p{font-size:7px;letter-spacing:.04em}.portrait-bottom strong{font-size:10px;line-height:1.5;margin-top:2px}.portrait-bottom .status-dot{width:5px;height:5px}.signal-visual{inset:-31px -23px -22px}.signal-coordinate{font-size:6px}.signal-coordinate-top{left:5%;top:15%}.signal-coordinate-bottom{right:2%;bottom:10%;writing-mode:vertical-rl}.signal-rings .signal-orbit{animation-duration:30s}.hero-meta{margin-top:23px}.hero-footnote{margin:0;justify-content:center;font-size:8px;line-height:1.8;gap:12px}.hero-footnote span+span:before{margin-right:12px}.hero-details{grid-template-columns:1fr;gap:22px;padding:25px 0 23px}.hero-offer{font-size:14px;line-height:1.85;max-width:none}.career-focus{padding:0 0 0 17px;border-left:2px solid var(--line)}.career-focus-label{font-size:8px;margin-bottom:8px}.career-focus-roles{font-size:14px;line-height:1.7}.career-focus-description{font-size:12px;line-height:1.8}.hero-bottom{font-size:8px;padding:17px 0 22px}.hero-bottom .right-note{display:none}.scroll-link{gap:12px}.scroll-icon{width:27px;height:27px}
+ .section{padding-block:66px}.section-label{font-size:9px;letter-spacing:.08em;margin-bottom:29px;gap:12px}.section-label .index{font-size:9px}.section-label:after{width:45px;margin-left:4px}h2,.learning h2{font-size:clamp(33px,9vw,48px);line-height:1.08;letter-spacing:-.045em}.about-copy{display:grid;grid-template-columns:1fr;gap:25px;margin-bottom:31px}.about-statement{font-size:clamp(29px,8vw,42px);line-height:1.23}.about-body{font-size:14px;line-height:1.85;max-width:none;margin-top:0}.about-body p+p{margin-top:14px}.metrics{grid-template-columns:1fr 1fr;gap:10px}.metric,.metric+.metric{display:block;padding:21px 18px;border:1px solid var(--line);border-radius:12px}.metric-value{font-size:clamp(37px,10.2vw,57px);letter-spacing:-.065em}.metric-label{font-size:11px;margin-top:17px;line-height:1.5}.metric-note{font-size:9px;line-height:1.7;margin-top:8px;max-width:none}.metric:last-child{grid-column:1/-1;display:grid;grid-template-columns:.55fr 1fr;column-gap:19px;align-items:center;padding:20px;background:transparent}.metric:last-child .metric-value{grid-row:1/3;font-size:44px;padding:0}.metric:last-child .metric-label{margin:0;font-size:12px}.metric:last-child .metric-note{margin-top:4px;font-size:9px}.metric:last-child .metric-note br{display:none}
+ .experience-layout{display:block}.experience-aside{position:static;margin-bottom:35px}.experience-aside h2{font-size:clamp(33px,9vw,48px)}.experience-aside p{font-size:13px;line-height:1.8;max-width:360px;margin-top:17px}.experience-aside .mono{margin-top:17px;font-size:9px}.timeline{padding-left:17px}.timeline:before,.timeline-fill{top:27px;bottom:20px}.experience-item{padding:0 0 26px 16px;margin-bottom:28px}.experience-item.current{margin:0 0 31px;padding:23px 20px 24px;border-radius:12px}.timeline-dot{left:-21px;top:7px}.current .timeline-dot{left:-22px;top:25px}.experience-item h3{font-size:24px;line-height:1.23}.experience-date{font-size:9px;gap:8px;margin-bottom:13px}.current-label{font-size:7px}.employer{font-size:11px;line-height:1.85;margin:13px 0 18px}.experience-item li,.experience-description{font-size:13px;line-height:1.9}.experience-item li{padding-left:13px;margin-top:11px}.experience-item li:before{top:10px}.section-head{display:flex;gap:25px;margin-bottom:30px;align-items:end;flex-wrap:wrap}.section-head p{font-size:13px;max-width:none;line-height:1.8;margin-top:0}.stack-list{grid-template-columns:1fr;gap:12px}.stack-row,.stack-row:first-child{display:block;grid-column:auto;padding:23px 22px 5px;border-radius:12px}.stack-category,.stack-row:first-child .stack-category{font-size:17px;gap:13px;padding-top:0;padding-bottom:24px;padding-right:26px}.stack-row:first-child .stack-category .mono{top:3px}.stack-icon{width:22px;height:22px}.chip{padding:8px 10px;font-size:10px}.chip small{font-size:8px}.stack-use{margin-top:21px;font-size:13px}.stack-use summary{font-size:11px;min-height:50px}.docs-strip{display:block;margin-top:25px;padding-top:23px;font-size:12px}.docs-items{gap:12px 20px;margin-top:17px;font-size:11px}.hack-section{padding-block:45px}.hack-card{display:block;border-radius:16px;min-height:0}.hack-copy{padding:28px}.hack-copy .mono{font-size:8px;line-height:1.8;max-width:250px;margin-bottom:20px}.hack-copy h2{font-size:38px}.hack-copy p{font-size:13px;line-height:1.85}.hack-meta{font-size:8px;gap:10px 14px;margin-top:21px}.hack-art{min-height:240px;border-left:0;border-top:1px solid var(--line);padding:29px 20px}.hack-art:before{width:170px;height:170px}.hack-art:after{width:220px;height:220px}.record-num{font-size:69px}.record-label{font-size:8px;margin-top:9px}.record-badge{font-size:7px;margin-top:19px}.learning{padding-top:35px}.learning .section-head{flex-wrap:nowrap;gap:15px}.cert-controls{gap:7px}.cert-controls .icon-button{width:43px;height:43px}.js .cert-toolbar{gap:8px;margin-bottom:21px}.search-label{font-size:11px}.cert-search{width:100%;max-width:none;min-width:0;font-size:13px;flex-basis:100%;height:48px}.cert-track{grid-auto-columns:92%;gap:12px}.cert-card{border-radius:12px;padding:26px;min-height:0}.cert-year{margin-bottom:28px}.cert-year .year{font-size:41px}.cert-year .mono{font-size:8px}.cert-card h3{font-size:23px;line-height:1.3}.cert-card ul{font-size:13px;line-height:1.85}.cert-card strong{font-size:11px}.cert-hint{font-size:10px;line-height:1.8}.progress-course{font-size:11px;line-height:1.8;flex-wrap:wrap;gap:7px}.education{display:block;padding:26px 23px;margin-top:35px; border-radius:12px}.education h3{font-size:27px}.education .degree{font-size:13px}.education .section-label{font-size:8px;gap:10px;margin-bottom:18px}.thesis{margin-top:26px;border-top:1px solid var(--line);border-bottom:0;padding-top:7px}.thesis summary{font-size:12px;min-height:63px;padding-block:12px;gap:20px;line-height:1.8}.thesis-text{font-size:13px;padding-bottom:0}.languages{display:block;margin-top:27px;padding-top:23px;font-size:12px}.language-list{display:grid;gap:12px;margin-top:18px}.language-list span{display:flex;justify-content:space-between;border-bottom:1px solid var(--line);padding-bottom:12px}.language-list span:last-child{border:0;padding-bottom:0}
+ .contact{padding-block:66px max(30px,env(safe-area-inset-bottom))}.contact .section-label{margin-bottom:28px}.contact-title{font-size:clamp(35px,9.6vw,61px);line-height:1.12;letter-spacing:-.05em;overflow-wrap:normal}.contact-title .accent{display:block;margin:0}.contact-title .arrow{font-size:.65em}.contact-row{margin-top:31px}.contact-actions{display:grid;grid-template-columns:1fr 1fr;gap:9px}.contact-actions .button{font-size:11px;min-height:52px;padding:14px 15px;gap:8px;border-radius:10px}.contact-actions .button:nth-child(-n+2){min-width:0}.contact-actions .button:nth-child(n+3){grid-column:auto}.contact-actions .button:last-child{grid-column:1/-1;justify-content:space-between;margin:0}.contact-utils{display:grid;grid-template-columns:1fr 1fr;gap:5px 14px;margin-top:24px;padding-top:16px}.contact-utils .utility-button{font-size:10px;line-height:1.6;padding:8px 0;gap:8px;min-height:44px}.contact-details{font-size:11px;gap:12px;display:grid;margin-top:18px}.footer{margin-top:34px;padding-top:24px;padding-bottom:0;display:block}.footer-left{gap:14px;align-items:center}.footer-left .brand-mark{width:40px;height:40px;min-width:40px;min-height:40px}.footer-left .mono{font-size:9px}.footer-right{font-size:10px;line-height:1.9;margin-top:17px}.footer-code{font-size:10px}.mobile-dock{padding-top:9px;box-shadow:0 -10px 30px #0002;background:var(--header);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px)}.mobile-dock a{border-radius:8px;min-height:45px;font-size:11px}
+}
+@media(max-width:360px){.wrap{padding-inline:16px}.nav-inner{gap:6px}.nav-actions{gap:5px}.menu-toggle{font-size:10px;padding-inline:8px;gap:6px}.language-select{min-width:59px}.eyebrow{font-size:7px}.eyebrow .location{font-size:7px}.hero-buttons{grid-template-columns:1fr 1fr}.hero-buttons .button,.hero-buttons .button:not(.button-primary){font-size:10px;padding:13px 11px}.hero-specialties{font-size:8px;gap:6px 10px}.portrait-wrap{max-width:285px;padding-inline:27px}.metric,.metric+.metric{padding:19px 15px}.metric:last-child{padding:18px}.metric-note{font-size:8px}.stack-category{font-size:16px}.experience-item.current{padding:22px 17px}.experience-item h3{font-size:22px}.contact-actions{grid-template-columns:1fr 1fr}.contact-actions .button{font-size:10px;padding-inline:12px}.contact-utils{grid-template-columns:1fr 1fr}.contact-utils .utility-button{font-size:9px}.prefs-panel{right:-73px}.cert-card{padding:23px}.record-badge{font-size:6px}}
+@media(prefers-reduced-motion:reduce){.signal-rings .signal-orbit{animation:none}.signal-visual{transform:none}.reveal-pending{opacity:1;transform:none}.thesis-text{opacity:1;animation:none}.timeline-fill{transform:scaleY(1)}}
+@media print{.signal-visual{display:none}.hero-grid{display:block}.hero-details{display:block}.career-focus{margin-top:20px}.metric,.metric+.metric,.experience-item.current,.stack-row,.education,.cert-card{background:transparent;border-color:#999;box-shadow:none;border-radius:0;color:#111}.stack-list{display:block}.stack-row,.stack-row:first-child{display:block;margin-top:12px}.contact-title{font-size:24pt}.hero-intro h1{font-size:48pt}.section{padding-block:25px}.contact{padding:25px 0}.hero-details{padding-top:20px}.metric-value{font-size:35pt}.stack-icon{color:#333}}
+
 </style>
   <script>
   document.documentElement.classList.add('js');
@@ -255,17 +282,10 @@ html:not(.js) .menu-toggle{display:none}
       <div class="wrap">
         <div class="eyebrow mono"><span class="eyebrow-left"><span class="status-dot" aria-hidden="true"></span>Информационная безопасность</span><span class="location">Астана, Казахстан / KZ</span></div>
         <div class="hero-grid">
-          <div class="hero-copy">
-            <h1 id="name"><span class="name-line"><span>Адиль</span></span><span class="name-line"><span>Сарсембек</span></span></h1>
-            <p class="role">Специалист по информационной безопасности</p>
-            <div class="hero-specialties mono"><span>Мониторинг</span><span>Инциденты</span><span>Автоматизация</span></div>
-            <p class="hero-offer hero-entrance"><strong>Мониторинг и сопровождение государственных информационных систем:</strong> анализирую журналы событий, диагностирую инциденты и довожу их устранение до результата.</p>
-
-            <div class="career-focus" aria-labelledby="career-focus-title"><p class="career-focus-label mono" id="career-focus-title">Желаемые направления</p><p class="career-focus-roles">Специалист по информационной безопасности / инженер мониторинга</p><p class="career-focus-description">Мониторинг инфраструктуры, сопровождение инцидентов, диагностика и автоматизация.</p></div>
-            <div class="hero-buttons hero-entrance" id="hero-actions"><a class="button button-primary magnetic" href="#contact">Связаться со мной <span class="arrow" aria-hidden="true">↗</span></a><a class="button magnetic" href="resume.pdf" download>Резюме PDF · RU <span class="arrow" aria-hidden="true">↓</span></a></div>
-            <div class="hero-footnote mono hero-entrance"><span>Работа в офисе</span><span>Готов к командировкам</span></div>
-          </div>
+<div class="hero-intro"><h1 id="name"><span class="name-line"><span>Адиль</span></span><span class="name-line"><span>Сарсембек</span></span></h1><p class="role">Специалист по информационной безопасности</p><div class="hero-specialties mono"><span>Мониторинг</span><span>Инциденты</span><span>Автоматизация</span></div></div>
+<div class="hero-buttons hero-entrance" id="hero-actions"><a class="button button-primary magnetic" href="#contact">Связаться со мной <span class="arrow" aria-hidden="true">↗</span></a><a class="button magnetic" href="resume.pdf" download>Резюме PDF · RU <span class="arrow" aria-hidden="true">↓</span></a></div>
           <div class="portrait-wrap hero-entrance">
+<div class="signal-visual" aria-hidden="true"><svg viewBox="0 0 600 600" fill="none"><g class="signal-rings"><circle cx="300" cy="300" r="244"/><circle cx="300" cy="300" r="194"/><circle cx="300" cy="300" r="142"/><path d="M300 28v66m0 412v66M28 300h66m412 0h66"/><path class="signal-orbit" d="M300 56a244 244 0 0 1 244 244"/></g><g class="signal-nodes"><circle cx="300" cy="56" r="5"/><circle cx="544" cy="300" r="5"/><circle cx="300" cy="544" r="3"/><circle cx="56" cy="300" r="3"/></g></svg><span class="signal-coordinate signal-coordinate-top">01 / AS</span><span class="signal-coordinate signal-coordinate-bottom">INFORMATION SECURITY</span></div>
             <!-- ФОТО: исходный цветной portrait.png рядом с index.html. Цветовой фильтр не применяется. -->
             <div class="portrait" id="portrait">
               <img class="portrait-photo" id="portrait-photo" src="portrait.png" alt="Адиль Сарсембек в деловом костюме" width="384" height="467" decoding="async" fetchpriority="high" onerror="this.hidden=true">
@@ -275,17 +295,20 @@ html:not(.js) .menu-toggle{display:none}
               <div class="scan" aria-hidden="true"></div>
             </div>
           </div>
-        </div>
-        <div class="hero-bottom mono"><a href="#experience" class="scroll-link"><span class="scroll-icon" aria-hidden="true">↓</span>Посмотреть опыт</a><span class="right-note">Анализировать. Реагировать.<br>Проверять результат.</span></div>
+
+<div class="hero-meta"><div class="hero-footnote mono hero-entrance"><span>Работа в офисе</span><span>Готов к командировкам</span></div></div>
+</div>
+<div class="hero-details" data-reveal><p class="hero-offer hero-entrance"><strong>Мониторинг и сопровождение государственных информационных систем:</strong> анализирую журналы событий, диагностирую инциденты и довожу их устранение до результата.</p><div class="career-focus" aria-labelledby="career-focus-title"><p class="career-focus-label mono" id="career-focus-title">Желаемые направления</p><p class="career-focus-roles">Специалист по информационной безопасности / инженер мониторинга</p><p class="career-focus-description">Мониторинг инфраструктуры, сопровождение инцидентов, диагностика и автоматизация.</p></div></div>
+        <div class="hero-bottom mono" data-reveal><a href="#experience" class="scroll-link"><span class="scroll-icon" aria-hidden="true">↓</span>Посмотреть опыт</a><span class="right-note">Анализировать. Реагировать.<br>Проверять результат.</span></div>
       </div>
     </section>
     <section class="section wrap" id="about" aria-labelledby="about-title">
       <div class="section-label mono" data-reveal><span class="index">01 /</span>Профиль</div>
       <div class="about-copy"><h2 class="about-statement" id="about-title" data-reveal>Вижу за событиями<br>состояние системы.<br><span class="muted">И следующий шаг.</span></h2><div class="about-body" data-reveal><p>Специалист по ИБ с опытом мониторинга и сопровождения государственных информационных систем. Работаю с Linux, Windows Server, SQL, Python и Bash; участвую в организации доступов и разработке регламентов.</p><p><a class="text-link" href="#stack">Технологии и инструменты <span aria-hidden="true">↗</span></a></p></div></div>
       <div class="metrics">
-        <div class="metric" data-reveal><span class="metric-value"><span class="sr-only">15–20</span><span data-counter="range" aria-hidden="true">15–20</span></span><p class="metric-label">Информационных систем</p><p class="metric-note">В зоне ответственности подразделения</p></div>
-        <div class="metric" data-reveal><span class="metric-value"><span class="sr-only">Примерно 2 500</span><span aria-hidden="true"><span class="approx">≈</span><span data-counter="2500">2 500</span></span></span><p class="metric-label">Датчиков мониторинга</p><p class="metric-note">В зоне ответственности подразделения</p><div class="sensor-grid" aria-hidden="true"></div></div>
-        <div class="metric" data-reveal><span class="metric-value"><span class="sr-only">2 415</span><span data-counter="2415" aria-hidden="true">2 415</span></span><p class="metric-label">Участников HackAlem AI</p><p class="metric-note">Рекорд Guinness World Records.<br>Я — среди участников.</p></div>
+        <div class="metric" data-surface data-reveal><span class="metric-value"><span class="sr-only">15–20</span><span data-counter="range" aria-hidden="true">15–20</span></span><p class="metric-label">Информационных систем</p><p class="metric-note">В зоне ответственности подразделения</p></div>
+        <div class="metric" data-surface data-reveal><span class="metric-value"><span class="sr-only">Примерно 2 500</span><span aria-hidden="true"><span class="approx">≈</span><span data-counter="2500">2 500</span></span></span><p class="metric-label">Датчиков мониторинга</p><p class="metric-note">В зоне ответственности подразделения</p><div class="sensor-grid" aria-hidden="true"></div></div>
+        <div class="metric" data-surface data-reveal><span class="metric-value"><span class="sr-only">2 415</span><span data-counter="2415" aria-hidden="true">2 415</span></span><p class="metric-label">Участников HackAlem AI</p><p class="metric-note">Рекорд Guinness World Records.<br>Я — среди участников.</p></div>
       </div>
     </section>
     <section class="section wrap" id="experience" aria-labelledby="experience-title">
@@ -293,7 +316,7 @@ html:not(.js) .menu-toggle{display:none}
       <div class="experience-layout">
         <div class="experience-aside" data-reveal><h2 id="experience-title">От сигнала<br>к решению.</h2><p>Мониторинг инфраструктуры, диагностика инцидентов и сопровождение изменений.</p><div class="mono">2023 — настоящее время</div></div>
         <div class="timeline"><div class="timeline-fill" aria-hidden="true"></div>
-          <article class="experience-item current" data-reveal><span class="timeline-dot" aria-hidden="true"></span><p class="experience-date mono"><span>Ноябрь 2025 — настоящее время</span><span class="current-label">Сейчас</span></p><h3>Ведущий эксперт-аналитик</h3><p class="employer">АО «Центр развития трудовых ресурсов»</p><ul><li><strong>Настраиваю PRTG и подключаю новые объекты;</strong> дорабатываю скрипты Python/Bash и SQL-запросы для мониторинга ИС.</li><li><strong>Диагностирую интеграционные сервисы</strong> по логам и SQL-данным; координирую устранение инцидентов и проверяю результат.</li><li>Организую доступы и взаимодействие с ответственными подразделениями.</li><li>Собираю требования, описываю процессы, готовлю ТЗ и задачи разработчикам; проверяю реализацию.</li><li>Разрабатываю и согласовываю регламенты, готовлю отчёты и акты, веду официальную переписку с госорганами.</li></ul></article>
+          <article class="experience-item current" data-surface data-reveal><span class="timeline-dot" aria-hidden="true"></span><p class="experience-date mono"><span>Ноябрь 2025 — настоящее время</span><span class="current-label">Сейчас</span></p><h3>Ведущий эксперт-аналитик</h3><p class="employer">АО «Центр развития трудовых ресурсов»</p><ul><li><strong>Настраиваю PRTG и подключаю новые объекты;</strong> дорабатываю скрипты Python/Bash и SQL-запросы для мониторинга ИС.</li><li><strong>Диагностирую интеграционные сервисы</strong> по логам и SQL-данным; координирую устранение инцидентов и проверяю результат.</li><li>Организую доступы и взаимодействие с ответственными подразделениями.</li><li>Собираю требования, описываю процессы, готовлю ТЗ и задачи разработчикам; проверяю реализацию.</li><li>Разрабатываю и согласовываю регламенты, готовлю отчёты и акты, веду официальную переписку с госорганами.</li></ul></article>
           <article class="experience-item" data-reveal><span class="timeline-dot" aria-hidden="true"></span><p class="experience-date mono">Март 2025 — ноябрь 2025</p><h3>Специалист по ИБ</h3><p class="employer">АО «Национальные информационные технологии»<br>Incident Response Engineer</p><ul><li><strong>Регистрировал и анализировал инциденты,</strong> определял ответственных, сопровождал устранение; работал с журналами событий.</li><li>Мониторил IT-инфраструктуру, ИС, сервисы и каналы связи; первичная диагностика и реакция на сбои.</li><li>Анализировал и сопровождал запросы на изменения в ИС и сервисах.</li></ul></article>
           <article class="experience-item" data-reveal><span class="timeline-dot" aria-hidden="true"></span><p class="experience-date mono">Июнь — октябрь 2024</p><h3>Техник</h3><p class="employer">ТОО «КаР-Тел» · Beeline</p><p class="experience-description">Подключение интернета, прокладка кабеля, роутеры, модемы, приставки, коммутаторы, консультации по услугам связи.</p></article>
           <article class="experience-item" data-reveal><span class="timeline-dot" aria-hidden="true"></span><p class="experience-date mono">Март 2023</p><h3>Производственная практика</h3><p class="employer">РГП «Госградкадастр»</p><p class="experience-description">Управление цифровизации и информационной безопасности.</p></article>
@@ -304,16 +327,16 @@ html:not(.js) .menu-toggle{display:none}
       <div class="section-label mono" data-reveal><span class="index">03 /</span>Компетенции</div>
       <div class="section-head" data-reveal><h2 id="stack-title">Инструменты<br>под задачу.</h2><p>От журналов событий и SQL-запросов<br>до скриптов мониторинга и регламентов.</p></div>
       <div class="stack-list">
-        <div class="stack-row" data-reveal><div class="stack-category"><span class="mono">01</span>Мониторинг и события</div><div class="stack-content"><div class="chips"><span class="chip">PRTG</span><span class="chip">Zabbix</span><span class="chip">Grafana</span><span class="chip">Splunk</span><span class="chip">Cacti</span></div><details class="stack-use"><summary>Применение в работе</summary><p>Настраиваю PRTG, подключаю новые объекты и сопровождаю мониторинг информационных систем.</p><p>Zabbix: опыт в работе. Просмотр готовых панелей, графиков и оповещений; анализ срабатываний и диагностика проблем; настройка элементов данных, триггеров и уведомлений.</p><p>Grafana: опыт в работе. Просмотр готовых дашбордов и графиков; анализ метрик и диагностика проблем; создание и настройка дашбордов; подключение источников данных; настройка правил оповещений.</p><p>Splunk: опыт в работе. Просмотр готовых панелей и оповещений, поиск и анализ событий, написание запросов SPL.</p><p>Cacti: опыт в работе. Просмотр готовых графиков трафика и нагрузки; анализ показателей и выявление проблем; добавление устройств и настройка сбора данных; создание и настройка графиков и шаблонов.</p></details></div></div>
-        <div class="stack-row" data-reveal><div class="stack-category"><span class="mono">02</span>Операционные системы</div><div class="stack-content"><div class="chips"><span class="chip">Linux</span><span class="chip">Windows Server</span></div><details class="stack-use"><summary>Применение в работе</summary><p>Linux: просмотр логов и диагностика проблем; управление службами и процессами; работа с файлами, правами доступа и пользователями; проверка сетевых соединений и доступности сервисов.</p><p>Windows Server: просмотр журналов событий и диагностика проблем; управление службами и процессами; работа с пользователями, группами и правами доступа; проверка сетевых подключений и доступности сервисов.</p></details></div></div>
-        <div class="stack-row" data-reveal><div class="stack-category"><span class="mono">03</span>Базы данных</div><div class="stack-content"><div class="chips"><span class="chip">Oracle</span><span class="chip">PostgreSQL</span></div><details class="stack-use"><summary>Применение в работе</summary><p>SQL: поиск и фильтрация данных (SELECT, WHERE), объединение таблиц и сводные расчёты (JOIN, GROUP BY), диагностика проблем и проверка данных при инцидентах, запросы для мониторинга и отчётов.</p></details></div></div>
-        <div class="stack-row" data-reveal><div class="stack-category"><span class="mono">04</span>Скрипты</div><div class="stack-content"><div class="chips"><span class="chip">Python</span><span class="chip">Bash</span></div><details class="stack-use"><summary>Применение в работе</summary><p>Python: дорабатываю скрипты для мониторинга и проверки доступности систем, обработки логов, файлов и данных, автоматизации рутинных задач и отчётов.</p><p>Bash: дорабатываю скрипты для мониторинга и проверки доступности сервисов, работы с файлами и логами, автоматизации команд и рутинных операций в Linux, подготовки данных для системы мониторинга.</p></details></div></div>
-        <div class="stack-row" data-reveal><div class="stack-category"><span class="mono">05</span>Интеграции</div><div class="stack-content"><div class="chips"><span class="chip">SOAP / REST API <small>базовые знания</small></span></div><details class="stack-use"><summary>Применение в работе</summary><p>Базовые знания SOAP / REST API. Диагностирую интеграционные сервисы по журналам событий и SQL-данным.</p></details></div></div>
+        <div class="stack-row" data-surface data-reveal><div class="stack-category"><svg class="stack-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h4l3-7 4 14 3-7h4"/></svg><span class="mono">01</span>Мониторинг и события</div><div class="stack-content"><div class="chips"><span class="chip">PRTG</span><span class="chip">Zabbix</span><span class="chip">Grafana</span><span class="chip">Splunk</span><span class="chip">Cacti</span></div><details class="stack-use"><summary>Применение в работе</summary><p>Настраиваю PRTG, подключаю новые объекты и сопровождаю мониторинг информационных систем.</p><p>Zabbix: опыт в работе. Просмотр готовых панелей, графиков и оповещений; анализ срабатываний и диагностика проблем; настройка элементов данных, триггеров и уведомлений.</p><p>Grafana: опыт в работе. Просмотр готовых дашбордов и графиков; анализ метрик и диагностика проблем; создание и настройка дашбордов; подключение источников данных; настройка правил оповещений.</p><p>Splunk: опыт в работе. Просмотр готовых панелей и оповещений, поиск и анализ событий, написание запросов SPL.</p><p>Cacti: опыт в работе. Просмотр готовых графиков трафика и нагрузки; анализ показателей и выявление проблем; добавление устройств и настройка сбора данных; создание и настройка графиков и шаблонов.</p></details></div></div>
+        <div class="stack-row" data-surface data-reveal><div class="stack-category"><svg class="stack-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 21h8m-4-5v5"/></svg><span class="mono">02</span>Операционные системы</div><div class="stack-content"><div class="chips"><span class="chip">Linux</span><span class="chip">Windows Server</span></div><details class="stack-use"><summary>Применение в работе</summary><p>Linux: просмотр логов и диагностика проблем; управление службами и процессами; работа с файлами, правами доступа и пользователями; проверка сетевых соединений и доступности сервисов.</p><p>Windows Server: просмотр журналов событий и диагностика проблем; управление службами и процессами; работа с пользователями, группами и правами доступа; проверка сетевых подключений и доступности сервисов.</p></details></div></div>
+        <div class="stack-row" data-surface data-reveal><div class="stack-category"><svg class="stack-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 4 16 4 16 0V5M4 12c0 4 16 4 16 0"/></svg><span class="mono">03</span>Базы данных</div><div class="stack-content"><div class="chips"><span class="chip">Oracle</span><span class="chip">PostgreSQL</span></div><details class="stack-use"><summary>Применение в работе</summary><p>SQL: поиск и фильтрация данных (SELECT, WHERE), объединение таблиц и сводные расчёты (JOIN, GROUP BY), диагностика проблем и проверка данных при инцидентах, запросы для мониторинга и отчётов.</p></details></div></div>
+        <div class="stack-row" data-surface data-reveal><div class="stack-category"><svg class="stack-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 7-5 5 5 5m8-10 5 5-5 5m-3-14-2 18"/></svg><span class="mono">04</span>Скрипты</div><div class="stack-content"><div class="chips"><span class="chip">Python</span><span class="chip">Bash</span></div><details class="stack-use"><summary>Применение в работе</summary><p>Python: дорабатываю скрипты для мониторинга и проверки доступности систем, обработки логов, файлов и данных, автоматизации рутинных задач и отчётов.</p><p>Bash: дорабатываю скрипты для мониторинга и проверки доступности сервисов, работы с файлами и логами, автоматизации команд и рутинных операций в Linux, подготовки данных для системы мониторинга.</p></details></div></div>
+        <div class="stack-row" data-surface data-reveal><div class="stack-category"><svg class="stack-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="8" width="6" height="8" rx="2"/><rect x="16" y="8" width="6" height="8" rx="2"/><path d="M8 12h8"/></svg><span class="mono">05</span>Интеграции</div><div class="stack-content"><div class="chips"><span class="chip">SOAP / REST API <small>базовые знания</small></span></div><details class="stack-use"><summary>Применение в работе</summary><p>Базовые знания SOAP / REST API. Диагностирую интеграционные сервисы по журналам событий и SQL-данным.</p></details></div></div>
       </div>
       <div class="docs-strip" data-reveal><span>Профессиональная документация</span><div class="docs-items"><span>Требования и ТЗ</span><span>Регламенты</span><span>Отчёты и акты</span><span>Официальная переписка</span></div></div>
     </section>
     <section class="hack-section wrap" aria-labelledby="hack-title">
-      <div class="hack-card" data-reveal><div class="hack-copy"><p class="mono">За пределами ежедневных задач / AI</p><h2 id="hack-title">HackAlem AI</h2><p>Участник международного AI-хакатона, установившего рекорд Guinness World Records по числу участников.</p><div class="hack-meta mono"><span>23 сентября 2026</span><span>Астана</span><span>Участник</span></div></div><div class="hack-art"><span class="record-num" aria-hidden="true">2 415</span><span class="record-label mono" aria-hidden="true">Участников. Один хакатон.</span><span class="record-badge mono">Guinness World Records · 2 415 участников</span></div></div>
+      <div class="hack-card" data-surface data-reveal><div class="hack-copy"><p class="mono">За пределами ежедневных задач / AI</p><h2 id="hack-title">HackAlem AI</h2><p>Участник международного AI-хакатона, установившего рекорд Guinness World Records по числу участников.</p><div class="hack-meta mono"><span>23 сентября 2026</span><span>Астана</span><span>Участник</span></div></div><div class="hack-art"><span class="record-num" aria-hidden="true">2 415</span><span class="record-label mono" aria-hidden="true">Участников. Один хакатон.</span><span class="record-badge mono">Guinness World Records · 2 415 участников</span></div></div>
     </section>
     <section class="section learning wrap" id="education" aria-labelledby="learning-title">
       <div class="section-label mono" data-reveal><span class="index">04 /</span>Образование и развитие</div>
@@ -321,9 +344,9 @@ html:not(.js) .menu-toggle{display:none}
       <div class="cert-toolbar js-only"><label class="search-label" for="cert-search">Найти обучение</label><input class="cert-search" type="search" id="cert-search" placeholder="Например, Cisco или Python" aria-controls="cert-track" autocomplete="off"></div>
       <p class="cert-empty" id="cert-empty" role="status" hidden>Ничего не найдено. Попробуйте другое название или год.</p>
       <div class="cert-track" id="cert-track" tabindex="0" role="region" aria-label="Обучение и сертификаты по годам, горизонтальная прокрутка">
-        <article class="cert-card" data-reveal><div class="cert-year"><span class="year">2022</span><span class="mono">/ Foundation</span></div><h3>Основы кибербезопасности</h3><ul><li><strong>Cisco</strong>Introduction to Cybersecurity</li><li><strong>Cisco</strong>Cybersecurity Essentials</li></ul><p class="cert-bottom mono">Cisco / Cybersecurity</p></article>
-        <article class="cert-card" data-reveal><div class="cert-year"><span class="year">2023</span><span class="mono">/ Operations</span></div><h3>Инфраструктура и защита</h3><ul><li><strong>Cisco</strong>IT Essentials</li><li><strong>Cisco</strong>CyberOps Associate</li><li><strong>Cisco</strong>Computer Networks Security</li></ul><p class="cert-bottom mono">Cisco / CyberOps</p></article>
-        <article class="cert-card" data-reveal><div class="cert-year"><span class="year">2026</span><span class="mono">/ Development</span></div><h3>Безопасность, код и AI</h3><ul><li><strong>Cisco</strong>Endpoint Security; Python Essentials 1 и 2; Introduction to Modern AI</li><li><strong>OPSWAT</strong>Introduction to Critical Infrastructure Protection</li><li><strong>Stepik</strong>Терминал Linux. Основы; Docker для начинающих</li><li><strong>Lerna / Skillbox</strong>Основы промпт-инжиниринга</li><li><strong>Astana Hub</strong>Основы ИИ</li></ul></article>
+        <article class="cert-card" data-surface data-reveal><div class="cert-year"><span class="year">2022</span><span class="mono">/ Foundation</span></div><h3>Основы кибербезопасности</h3><ul><li><strong>Cisco</strong>Introduction to Cybersecurity</li><li><strong>Cisco</strong>Cybersecurity Essentials</li></ul><p class="cert-bottom mono">Cisco / Cybersecurity</p></article>
+        <article class="cert-card" data-surface data-reveal><div class="cert-year"><span class="year">2023</span><span class="mono">/ Operations</span></div><h3>Инфраструктура и защита</h3><ul><li><strong>Cisco</strong>IT Essentials</li><li><strong>Cisco</strong>CyberOps Associate</li><li><strong>Cisco</strong>Computer Networks Security</li></ul><p class="cert-bottom mono">Cisco / CyberOps</p></article>
+        <article class="cert-card" data-surface data-reveal><div class="cert-year"><span class="year">2026</span><span class="mono">/ Development</span></div><h3>Безопасность, код и AI</h3><ul><li><strong>Cisco</strong>Endpoint Security; Python Essentials 1 и 2; Introduction to Modern AI</li><li><strong>OPSWAT</strong>Introduction to Critical Infrastructure Protection</li><li><strong>Stepik</strong>Терминал Linux. Основы; Docker для начинающих</li><li><strong>Lerna / Skillbox</strong>Основы промпт-инжиниринга</li><li><strong>Astana Hub</strong>Основы ИИ</li></ul></article>
       </div>
       <p class="cert-hint">Листайте карточки в сторону или используйте стрелки →</p>
       <p class="progress-course"><span class="status-dot" aria-hidden="true"></span>В процессе: <strong>Blue Team Interactive Range</strong></p>
@@ -335,7 +358,7 @@ html:not(.js) .menu-toggle{display:none}
       <h2 class="contact-title" id="contact-title" data-reveal><a href="mailto:adil04@Inbox.ru">Обсудим вакансию <span class="accent">и задачи вашей команды <span class="arrow" aria-hidden="true">↗</span></span></a></h2>
       <div class="contact-row" data-reveal><div class="contact-actions"><a class="button magnetic" href="https://t.me/adil10961" target="_blank" rel="noopener noreferrer" aria-label="Telegram @adil10961, откроется в новой вкладке">Telegram <span aria-hidden="true">↗</span></a><a class="button magnetic" href="https://wa.me/77085513925" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp +7 708 551 3925">WhatsApp <span aria-hidden="true">↗</span></a><a class="button magnetic" href="mailto:adil04@Inbox.ru">Email <span aria-hidden="true">↗</span></a><a class="button magnetic" href="tel:+77085513925">+7 708 551 3925 <span aria-hidden="true">↗</span></a><a class="button magnetic" href="resume.pdf" download>Скачать резюме (PDF · RU) <span aria-hidden="true">↓</span></a></div></div>
 
-      <div class="contact-utils"><button class="utility-button js-only" type="button" data-copy="adil04@Inbox.ru">Скопировать email <span aria-hidden="true">⧉</span></button><button class="utility-button js-only" type="button" data-copy="+77085513925">Скопировать телефон <span aria-hidden="true">⧉</span></button><a class="utility-button" href="adil-sarsembek.vcf" download>Сохранить контакт <span aria-hidden="true">↓</span></a><button class="utility-button js-only" type="button" id="share-site">Поделиться сайтом <span aria-hidden="true">↗</span></button></div>
+      <div class="contact-utils" data-reveal><button class="utility-button js-only" type="button" data-copy="adil04@Inbox.ru">Скопировать email <span aria-hidden="true">⧉</span></button><button class="utility-button js-only" type="button" data-copy="+77085513925">Скопировать телефон <span aria-hidden="true">⧉</span></button><a class="utility-button" href="adil-sarsembek.vcf" download>Сохранить контакт <span aria-hidden="true">↓</span></a><button class="utility-button js-only" type="button" id="share-site">Поделиться сайтом <span aria-hidden="true">↗</span></button></div>
       <div class="contact-details"><a href="mailto:adil04@Inbox.ru">adil04@Inbox.ru</a><a href="tel:+77085513925">+7 708 551 3925</a><a href="https://github.com/adil10961" target="_blank" rel="noopener noreferrer">GitHub / adil10961 ↗</a></div>
       <div class="footer"><div class="footer-left"><a href="#home" class="brand-mark" aria-label="Вернуться к началу">АС</a><p class="mono">Адиль Сарсембек<br><a href="mailto:adil04@Inbox.ru">adil04@Inbox.ru</a></p></div><div class="footer-right"><p>Астана, Казахстан · Работа в офисе</p><p>Готов к командировкам · <a href="https://t.me/adil10961">@adil10961</a></p><p class="footer-code"><a href="https://github.com/adil10961/adil-sarsembek-resume" target="_blank" rel="noopener noreferrer">Код этого сайта <span aria-hidden="true">↗</span></a></p></div></div>
     </section>
@@ -355,9 +378,12 @@ html:not(.js) .menu-toggle{display:none}
   const root = document.documentElement;
   const media = matchMedia('(prefers-reduced-motion: reduce)');
   const colorMedia = matchMedia('(prefers-color-scheme: light)');
+  const pointerMedia = matchMedia('(hover: hover) and (pointer: fine)');
   const languages = ['ru','en','kk'];
-  let language = 'ru', toastTimer, framePending = false;
-  let motionOff = read('as-motion') ? read('as-motion') === 'off' : media.matches;
+  let language = 'ru', toastTimer, scrollFrame = 0, alignmentFrame = 0, pointerFrame = 0;
+  let motionPreference = read('as-motion') === 'off' ? 'off' : 'on';
+  let motionOff = motionPreference === 'off' || media.matches;
+  let motionReady = false, revealObserver, pointerSample;
   const header = document.querySelector('.topbar');
   const menu = document.getElementById('menu-toggle');
   const preferences = document.getElementById('preferences');
@@ -367,6 +393,106 @@ html:not(.js) .menu-toggle{display:none}
   const dock = document.getElementById('mobile-dock');
   const heroActions = document.getElementById('hero-actions');
   const contact = document.getElementById('contact');
+  const progress = document.querySelector('.progress');
+  const timeline = document.querySelector('.timeline');
+  const signals = [...document.querySelectorAll('.signal-visual')];
+  const surfaces = [...document.querySelectorAll('[data-surface]')];
+  const navTargets = [...document.querySelectorAll('.nav-links a')].map(link=>({link,target:hashTarget(link.hash)}));
+  const revealTargets = [...document.querySelectorAll('[data-reveal]')];
+  const revealed = new WeakSet();
+  const activeAnimations = new Set();
+  const detailAnimations = new Map();
+  let anchorPinned = Boolean(hashTarget(location.hash));
+  const clamp = (value,min,max) => Math.min(max,Math.max(min,value));
+  const canAnimate = () => !motionOff && !document.hidden && typeof Element.prototype.animate === 'function';
+
+  function hashTarget(hash) {
+    if(!hash || hash==='#')return null;
+    try{return document.getElementById(decodeURIComponent(hash.slice(1)));}catch{return null;}
+  }
+  function targetScrollTop(target) {
+    const max=Math.max(0,root.scrollHeight-innerHeight);
+    return clamp(target.getBoundingClientRect().top+scrollY-header.offsetHeight-18,0,max);
+  }
+  function anchorIsNear() {
+    const target=hashTarget(location.hash);
+    return Boolean(target && Math.abs(scrollY-targetScrollTop(target))<100);
+  }
+  function scheduleHashAlignment() {
+    if(!anchorPinned || !hashTarget(location.hash))return;
+    cancelAnimationFrame(alignmentFrame);
+    alignmentFrame=requestAnimationFrame(()=>{
+      alignmentFrame=0;
+      const target=hashTarget(location.hash);
+      if(!anchorPinned || !target)return;
+      window.scrollTo({top:targetScrollTop(target),behavior:'instant'});
+      scheduleScroll();
+    });
+  }
+  function releaseAnchor() {
+    anchorPinned=false;
+    cancelAnimationFrame(alignmentFrame);
+    alignmentFrame=0;
+  }
+  function animateElement(element,keyframes,options={},cleanup) {
+    if(!canAnimate()){cleanup?.();return null;}
+    let animation;
+    try{animation=element.animate(keyframes,{duration:500,easing:'cubic-bezier(.22,1,.36,1)',fill:'backwards',...options});}
+    catch{cleanup?.();return null;}
+    const record={element,animation,done:false,finish:null};
+    record.finish=()=>{if(record.done)return;record.done=true;activeAnimations.delete(record);cleanup?.();};
+    activeAnimations.add(record);
+    animation.finished.then(record.finish,record.finish);
+    return record;
+  }
+  function cancelRecord(record) {
+    if(!record)return;
+    record.animation.cancel();
+    record.finish();
+  }
+  function cancelAnimations() {
+    [...activeAnimations].forEach(cancelRecord);
+    detailAnimations.clear();
+  }
+  function resetPointer() {
+    cancelAnimationFrame(pointerFrame);pointerFrame=0;pointerSample=null;
+    surfaces.forEach(surface=>{surface.style.removeProperty('--pointer-x');surface.style.removeProperty('--pointer-y');});
+  }
+  function markRevealed(element) {
+    revealed.add(element);
+    element.classList.remove('reveal-pending');
+    element.classList.add('reveal-visible');
+    revealObserver?.unobserve(element);
+  }
+  function observeReveals() {
+    revealObserver?.disconnect();
+    revealTargets.forEach(element=>element.classList.remove('reveal-pending'));
+    if(!canAnimate() || !('IntersectionObserver' in window))return;
+    revealObserver=new IntersectionObserver(entries=>{
+      let order=0;
+      entries.filter(entry=>entry.isIntersecting).sort((a,b)=>a.boundingClientRect.top-b.boundingClientRect.top || a.boundingClientRect.left-b.boundingClientRect.left).forEach(entry=>{
+        const element=entry.target;
+        markRevealed(element);
+        if(element.contains(document.activeElement))return;
+        animateElement(element,[{opacity:0,transform:'translateY(18px)'},{opacity:1,transform:'none'}],{duration:540,delay:Math.min(order++*45,135)});
+      });
+    },{threshold:.08,rootMargin:'0px 0px 40px 0px'});
+    revealTargets.forEach(element=>{
+      if(revealed.has(element))return;
+      if(element.getBoundingClientRect().top<=innerHeight){markRevealed(element);return;}
+      revealObserver.observe(element);
+    });
+  }
+  function runIntro() {
+    if(!canAnimate() || (location.hash && !['#home','#main'].includes(location.hash)))return;
+    const candidates=[...document.querySelectorAll('.hero-intro,.hero-details,#hero-actions,.portrait-wrap,.hero-meta')];
+    const elements=candidates.filter(element=>!candidates.some(parent=>parent!==element && parent.contains(element)));
+    elements.forEach((element,index)=>{
+      const rect=element.getBoundingClientRect();
+      if(rect.bottom<=0 || rect.top>=innerHeight)return;
+      animateElement(element,[{opacity:0,transform:`translateY(${index===0?12:20}px)`},{opacity:1,transform:'none'}],{duration:index===0?620:720,delay:Math.min(index*55,180)});
+    });
+  }
   const textNodes = [];
   const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
   while(walker.nextNode()) {
@@ -388,23 +514,34 @@ html:not(.js) .menu-toggle{display:none}
   }
   function closeMenu(returnFocus=false) {header.classList.remove('menu-open');menu.setAttribute('aria-expanded','false');if(returnFocus)menu.focus();}
   function updateMotion() {
-    root.classList.toggle('motion-paused',motionOff);
+    const wasOff=motionOff;
+    motionOff=motionPreference==='off'||media.matches;
+    root.classList.toggle('motion-paused',motionOff||document.hidden);
     root.style.scrollBehavior=motionOff?'auto':'';
     motionButton.setAttribute('aria-pressed',String(motionOff));
+    motionButton.disabled=media.matches;
     motionButton.setAttribute('aria-label',t(motionOff?'Включить анимации':'Приостановить анимации'));
     document.getElementById('motion-label').textContent=t(motionOff?'Анимации выключены':'Анимации включены');
     document.getElementById('motion-symbol').textContent=motionOff?'▷':'Ⅱ';
-    if(motionOff)document.querySelectorAll('.reveal-pending').forEach(el=>el.classList.remove('reveal-pending'));
+    if(motionOff || document.hidden){
+      cancelAnimations();revealObserver?.disconnect();resetPointer();
+      revealTargets.forEach(element=>element.classList.remove('reveal-pending'));
+      signals.forEach(signal=>signal.style.setProperty('--signal-shift','0px'));
+      timeline?.style.setProperty('--timeline-progress','1');
+    }else if(motionReady && wasOff){observeReveals();}
+    if(motionReady)scheduleScroll();
   }
   function setTheme(theme,persist=false) {
     const value=['system','light','dark'].includes(theme)?theme:'system';
     if(value==='system')delete root.dataset.theme;else root.dataset.theme=value;
     document.querySelectorAll('[name="theme"]').forEach(input=>input.checked=input.value===value);
     const dark=value==='dark'||(value==='system'&&!colorMedia.matches);
-    document.querySelector('meta[name="theme-color"]').content=dark?'#101210':'#f3f4ed';
+    document.querySelector('meta[name="theme-color"]').content=dark?'#0e1213':'#f6f7f2';
     if(persist)save('as-theme',value);
   }
   function setLanguage(next,persist=false) {
+    const realign=anchorPinned||anchorIsNear();
+    cancelAnimations();
     language=languages.includes(next)?next:'ru';root.lang=language;languageSelect.value=language;
     textNodes.forEach(([node,original])=>{const source=original.trim();node.nodeValue=original.replace(source,t(source));});
     attributes.forEach(([element,attr,value])=>element.setAttribute(attr,t(value)));
@@ -412,19 +549,27 @@ html:not(.js) .menu-toggle{display:none}
     document.querySelector('meta[property="og:locale"]').content={ru:'ru_RU',en:'en_US',kk:'kk_KZ'}[language];
     updateMotion();filterCertificates();updateCertControls();scheduleScroll();
     if(persist){save('as-language',language);const url=new URL(location.href);if(language==='ru')url.searchParams.delete('lang');else url.searchParams.set('lang',language);history.replaceState(null,'',url);}
+    if(realign){anchorPinned=true;scheduleHashAlignment();}
   }
   function updateScroll() {
-    framePending=false;
-    const max=document.documentElement.scrollHeight-innerHeight;
-    document.querySelector('.progress').style.transform=`scaleX(${max>0?Math.min(1,Math.max(0,scrollY/max)):0})`;
-    const links=[...document.querySelectorAll('.nav-links a')];let active=links[0];
-    links.forEach(link=>{const target=document.querySelector(link.hash);if(target&&target.getBoundingClientRect().top<=header.offsetHeight+120)active=link;});
-    links.forEach(link=>{if(link===active)link.setAttribute('aria-current','location');else link.removeAttribute('aria-current');});
+    scrollFrame=0;
+    if(document.hidden)return;
+    const max=root.scrollHeight-innerHeight;
+    const headerHeight=header.offsetHeight;
+    let active=navTargets[0]?.link;
+    navTargets.forEach(({link,target})=>{if(target&&target.getBoundingClientRect().top<=headerHeight+120)active=link;});
     const contactRect=contact.getBoundingClientRect();
-    const show=innerWidth<=760&&heroActions.getBoundingClientRect().bottom<header.offsetHeight&&!(contactRect.top<innerHeight&&contactRect.bottom>0);
+    const show=innerWidth<=760&&heroActions.getBoundingClientRect().bottom<headerHeight&&!(contactRect.top<innerHeight&&contactRect.bottom>0);
+    const timelineRect=timeline?.getBoundingClientRect();
+    const timelineProgress=motionOff?1:timelineRect?clamp((innerHeight*.7-timelineRect.top)/Math.max(1,timelineRect.height),0,1):1;
+    const signalShift=!motionOff&&innerWidth>900?clamp(scrollY*.045,0,24):0;
+    if(progress)progress.style.transform=`scaleX(${max>0?clamp(scrollY/max,0,1):0})`;
+    navTargets.forEach(({link})=>{if(link===active)link.setAttribute('aria-current','location');else link.removeAttribute('aria-current');});
     if(!dock.contains(document.activeElement))dock.hidden=!show;
+    timeline?.style.setProperty('--timeline-progress',String(timelineProgress));
+    signals.forEach(signal=>signal.style.setProperty('--signal-shift',`${signalShift}px`));
   }
-  function scheduleScroll(){if(!framePending){framePending=true;requestAnimationFrame(updateScroll);}}
+  function scheduleScroll(){if(!scrollFrame&&!document.hidden)scrollFrame=requestAnimationFrame(updateScroll);}
   menu.addEventListener('click',()=>{const open=menu.getAttribute('aria-expanded')!=='true';header.classList.toggle('menu-open',open);menu.setAttribute('aria-expanded',String(open));if(open)preferences.open=false;});
   preferences.addEventListener('toggle',()=>{if(preferences.open)closeMenu();});
   document.addEventListener('click',event=>{if(!header.contains(event.target))closeMenu();if(!preferences.contains(event.target))preferences.open=false;});
@@ -432,14 +577,15 @@ html:not(.js) .menu-toggle{display:none}
   languageSelect.addEventListener('change',()=>setLanguage(languageSelect.value,true));
   document.querySelectorAll('[name="theme"]').forEach(input=>input.addEventListener('change',()=>setTheme(input.value,true)));
   colorMedia.addEventListener('change',()=>setTheme(read('as-theme')||'system'));
-  motionButton.addEventListener('click',()=>{motionOff=!motionOff;save('as-motion',motionOff?'off':'on');updateMotion();});
-  media.addEventListener('change',()=>{if(!read('as-motion')){motionOff=media.matches;updateMotion();}});
+  motionButton.addEventListener('click',()=>{if(media.matches)return;motionPreference=motionOff?'on':'off';save('as-motion',motionPreference);updateMotion();});
+  media.addEventListener('change',updateMotion);
   document.querySelectorAll('a[href^="#"]').forEach(link=>link.addEventListener('click',event=>{
-    const target=document.getElementById(link.hash.slice(1));if(!target)return;
+    if(event.defaultPrevented||event.button!==0||event.metaKey||event.ctrlKey||event.shiftKey||event.altKey||link.hasAttribute('download'))return;
+    const target=hashTarget(link.hash);if(!target)return;
     event.preventDefault();closeMenu();preferences.open=false;
-    history.pushState(null,'',link.hash);
-    const top=target.getBoundingClientRect().top+scrollY-header.offsetHeight-18;
-    window.scrollTo({top:Math.max(0,top),behavior:motionOff?'instant':'smooth'});
+    if(location.hash!==link.hash)history.pushState(null,'',link.hash);
+    anchorPinned=true;
+    window.scrollTo({top:targetScrollTop(target),behavior:motionOff?'instant':'smooth'});
     target.setAttribute('tabindex','-1');target.focus({preventScroll:true});
   }));
   const certTrack=document.getElementById('cert-track');
@@ -449,7 +595,7 @@ html:not(.js) .menu-toggle{display:none}
     const query=search.value.trim().toLocaleLowerCase();let any=false;
     cards.forEach(card=>{let matched=0;const heading=card.querySelector('.year').textContent+' '+card.querySelector('h3').textContent;card.querySelectorAll('li').forEach(li=>{const show=!query||(heading+' '+li.textContent).toLocaleLowerCase().includes(query);li.hidden=!show;if(show)matched++;});card.hidden=matched===0;if(matched)any=true;});
     document.getElementById('cert-empty').hidden=any;certTrack.hidden=!any;
-    certTrack.scrollLeft=0;updateCertControls();
+    certTrack.scrollLeft=0;updateCertControls();scheduleScroll();
   }
   function updateCertControls(){document.getElementById('cert-prev').disabled=certTrack.hidden||certTrack.scrollLeft<2;document.getElementById('cert-next').disabled=certTrack.hidden||certTrack.scrollLeft+certTrack.clientWidth>=certTrack.scrollWidth-2;}
   function scrollCerts(direction){const card=cards.find(card=>!card.hidden);if(card)certTrack.scrollBy({left:direction*(card.offsetWidth+parseFloat(getComputedStyle(certTrack).columnGap)),behavior:motionOff?'instant':'smooth'});}
@@ -472,15 +618,92 @@ html:not(.js) .menu-toggle{display:none}
     if(navigator.share){try{await navigator.share(payload);return;}catch(error){if(error.name==='AbortError')return;}}
     await copyText(payload.url,'Ссылка скопирована',trigger);
   });
+
+  function animateDetails(detail) {
+    [...activeAnimations].filter(record=>detail===record.element||detail.contains(record.element)).forEach(cancelRecord);
+    detailAnimations.delete(detail);
+    scheduleScroll();
+    if(!detail.open||!canAnimate())return;
+    const summary=detail.querySelector('summary');
+    if(!summary)return;
+    const rect=detail.getBoundingClientRect();
+    const style=getComputedStyle(detail);
+    const closedHeight=summary.getBoundingClientRect().bottom-rect.top+(parseFloat(style.paddingBottom)||0)+(parseFloat(style.borderBottomWidth)||0);
+    if(rect.height<=closedHeight+1)return;
+    const group={records:[]};
+    detailAnimations.set(detail,group);
+    const overflow=detail.style.overflow;
+    detail.style.overflow='clip';
+    group.records.push(animateElement(detail,[{height:`${closedHeight}px`},{height:`${rect.height}px`}],{duration:280},()=>{
+      if(detailAnimations.get(detail)===group){detail.style.overflow=overflow;detailAnimations.delete(detail);}
+      scheduleScroll();
+    }));
+    [...detail.children].filter(child=>child!==summary).forEach((child,index)=>{
+      group.records.push(animateElement(child,[{opacity:0,transform:'translateY(6px)'},{opacity:1,transform:'none'}],{duration:260,delay:Math.min(index*20,60)}));
+    });
+  }
+  document.querySelectorAll('.stack-use,.thesis').forEach(detail=>detail.addEventListener('toggle',()=>animateDetails(detail)));
+  document.querySelectorAll('details').forEach(detail=>detail.addEventListener('toggle',scheduleScroll));
+
+  function updatePointer() {
+    pointerFrame=0;
+    const sample=pointerSample;
+    if(!sample||!canAnimate()||!pointerMedia.matches)return;
+    const rect=sample.element.getBoundingClientRect();
+    if(!rect.width||!rect.height)return;
+    sample.element.style.setProperty('--pointer-x',`${clamp((sample.x-rect.left)/rect.width*100,0,100).toFixed(1)}%`);
+    sample.element.style.setProperty('--pointer-y',`${clamp((sample.y-rect.top)/rect.height*100,0,100).toFixed(1)}%`);
+  }
+  surfaces.forEach(element=>{
+    element.addEventListener('pointermove',event=>{
+      if(event.pointerType==='touch'||!canAnimate()||!pointerMedia.matches)return;
+      pointerSample={element,x:event.clientX,y:event.clientY};
+      if(!pointerFrame)pointerFrame=requestAnimationFrame(updatePointer);
+    },{passive:true});
+    const leave=()=>{
+      if(pointerSample?.element===element){cancelAnimationFrame(pointerFrame);pointerFrame=0;pointerSample=null;}
+      element.style.removeProperty('--pointer-x');element.style.removeProperty('--pointer-y');
+    };
+    element.addEventListener('pointerleave',leave,{passive:true});
+    element.addEventListener('pointercancel',leave,{passive:true});
+  });
+  pointerMedia.addEventListener('change',resetPointer);
+  document.addEventListener('focusin',event=>{
+    [...activeAnimations].filter(record=>record.element.contains(event.target)).forEach(cancelRecord);
+    revealTargets.filter(element=>element.contains(event.target)).forEach(markRevealed);
+  });
+  document.addEventListener('visibilitychange',()=>{
+    cancelAnimationFrame(scrollFrame);scrollFrame=0;
+    cancelAnimationFrame(alignmentFrame);alignmentFrame=0;
+    updateMotion();
+    if(!document.hidden){observeReveals();scheduleScroll();}
+  });
+  addEventListener('pagehide',()=>{cancelAnimations();revealObserver?.disconnect();resetPointer();cancelAnimationFrame(scrollFrame);scrollFrame=0;cancelAnimationFrame(alignmentFrame);alignmentFrame=0;});
+  addEventListener('pageshow',event=>{if(event.persisted){updateMotion();observeReveals();scheduleScroll();}});
+  addEventListener('beforeprint',()=>{cancelAnimations();revealObserver?.disconnect();resetPointer();revealTargets.forEach(element=>element.classList.remove('reveal-pending'));});
+  addEventListener('afterprint',()=>{observeReveals();scheduleScroll();});
+  addEventListener('wheel',releaseAnchor,{passive:true});
+  addEventListener('touchstart',releaseAnchor,{passive:true});
+  addEventListener('pointerdown',releaseAnchor,{passive:true});
+  addEventListener('keydown',event=>{
+    if(['ArrowDown','ArrowUp','PageDown','PageUp','Home','End',' '].includes(event.key)&&!event.target.closest('input,textarea,select,[contenteditable="true"]'))releaseAnchor();
+  });
+  addEventListener('hashchange',()=>{anchorPinned=anchorIsNear();scheduleHashAlignment();scheduleScroll();});
   addEventListener('scroll',scheduleScroll,{passive:true});
   addEventListener('resize',()=>{if(innerWidth>760)closeMenu();scheduleScroll();updateCertControls();});
-  document.fonts?.ready.then(()=>{updateCertControls();scheduleScroll();});
-  document.querySelectorAll('details').forEach(detail=>detail.addEventListener('toggle',scheduleScroll));
-  if('IntersectionObserver' in window && !motionOff){const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.remove('reveal-pending');entry.target.classList.add('reveal-visible');observer.unobserve(entry.target);}}),{threshold:.08});document.querySelectorAll('[data-reveal]').forEach(el=>{if(el.getBoundingClientRect().top>innerHeight){el.classList.add('reveal-pending');observer.observe(el);}});}
+  document.fonts?.ready.then(()=>{updateCertControls();scheduleScroll();scheduleHashAlignment();});
+  addEventListener('load',()=>{scheduleHashAlignment();scheduleScroll();},{once:true});
+  if('ResizeObserver' in window){
+    const resizeObserver=new ResizeObserver(()=>{scheduleScroll();updateCertControls();});
+    resizeObserver.observe(document.querySelector('main')||document.body);
+    resizeObserver.observe(header);
+  }
   setTheme(read('as-theme')||'system');
   const requested=new URL(location.href).searchParams.get('lang');
   setLanguage(languages.includes(requested)?requested:read('as-language')||'ru');
-  updateMotion();updateScroll();updateCertControls();
+  motionReady=true;
+  updateMotion();observeReveals();scheduleScroll();updateCertControls();
+  runIntro();scheduleHashAlignment();
 })();
 
 </script>

@@ -1,0 +1,16 @@
+BEGIN:VCARD
+VERSION:3.0
+N;CHARSET=UTF-8:Сарсембек;Адиль;;;
+FN;CHARSET=UTF-8:Адиль Сарсембек
+TITLE;CHARSET=UTF-8:Специалист по информационной 
+ безопасности
+TEL;TYPE=CELL,VOICE:+77085513925
+EMAIL;TYPE=INTERNET:adil04@Inbox.ru
+ADR;CHARSET=UTF-8:;;;Астана;;;Казахстан
+URL:https://adil10961.github.io/adil-sarsembek-resume/
+X-SOCIALPROFILE;TYPE=telegram:https://t.me/adil10961
+NOTE;CHARSET=UTF-8:Telegram: @adil10961\nМониторинг и сопро
+ вождение информационных систем\, диагно
+ стика и сопровождение устранения инциде
+ нтов.
+END:VCARD

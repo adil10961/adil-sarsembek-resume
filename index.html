@@ -12,11 +12,16 @@
   <meta property="og:description" content="Мониторинг. Диагностика. Контроль результата. Опыт, технический стек и контакты специалиста по ИБ.">
   <!-- МЕТАДАННЫЕ: при смене домена обновите og:url. -->
   <meta property="og:url" content="https://adil10961.github.io/adil-sarsembek-resume/">
+
+  <link rel="canonical" href="https://adil10961.github.io/adil-sarsembek-resume/">
+  <meta property="og:image" content="https://adil10961.github.io/adil-sarsembek-resume/social-card.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Адиль Сарсембек — информационная безопасность">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://adil10961.github.io/adil-sarsembek-resume/social-card.png">
   <meta name="theme-color" content="#101210">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23101210'/%3E%3Cpath d='M14 46 27 18h10l13 28H39l-3-8h-9l-3 8zm16-17-2 5h6l-2-5z' fill='%23c3f56b'/%3E%3C/svg%3E">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Onest:wght@400;450;500;550;600;650;700;750;800&display=swap" rel="stylesheet">
   <style>
     /* ЦВЕТА: изменяйте переменные здесь. Светлая тема сохраняет тот же лаймовый оттенок, но затемняет текст акцента для контраста. */
     :root{color-scheme:dark;--bg:#101210;--surface:#171b16;--surface-2:#1c211a;--ink:#f0f1e9;--muted:#a4aca0;--subtle:#7e8a78;--accent:#c3f56b;--accent-ink:#142005;--line:#333b2e;--grid:rgba(181,202,162,.055);--alert:#efaa73;--header:rgba(16,18,16,.9);--glow:rgba(159,212,87,.065);--font:'Onest',Arial,sans-serif;--mono:'IBM Plex Mono',Consolas,monospace;--gutter:clamp(22px,5.2vw,100px)}
@@ -66,25 +71,174 @@
     @media (hover:none){.button:hover{background:var(--bg);color:var(--ink);border-color:var(--line)}.button-primary:hover{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}.chip:hover{color:var(--ink);border-color:var(--line)}.contact-actions .button:hover{background:transparent;color:var(--ink)}}
     @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;scroll-behavior:auto!important;transition:none!important}.loader,.cursor,.scan{display:none!important}[data-reveal],.name-line>span,.hero-entrance{transform:none!important;opacity:1!important}}
     @media print{.topbar,.loader,.cursor,.hero-bottom,.log-bar,.portrait-wrap,.cert-controls,.contact-actions,.footer,.sensor-grid{display:none!important}body{background:white;color:black;font-size:11pt}body:before{display:none}.wrap{padding:0}.section{padding:25px 0}.hero{padding:0;background:none}.hero-grid{display:block;padding:0 0 20px}h1{font-size:48pt;color:black}.name-line:last-child{color:black}.hero-buttons,.hero-footnote{display:none}.hero-offer{color:#333}.cert-track{display:block}.cert-card{break-inside:avoid;background:white;margin-bottom:15px}.experience-item{break-inside:avoid}.contact{padding:20px 0}.contact-title{font-size:24pt}.hack-card{min-height:0}.hack-art{display:none}.hack-card{display:block}.hack-copy{padding:20px}.chip{background:white}.muted,.about-body,.experience-item li,.employer{color:#333}}
-  </style>
+  /* cyrillic-ext */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(fonts/ibm-plex-mono-400-cyrillic-ext.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+/* cyrillic */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(fonts/ibm-plex-mono-400-cyrillic.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+/* latin-ext */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(fonts/ibm-plex-mono-400-latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(fonts/ibm-plex-mono-400-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* cyrillic-ext */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(fonts/ibm-plex-mono-500-cyrillic-ext.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+/* cyrillic */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(fonts/ibm-plex-mono-500-cyrillic.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+/* latin-ext */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(fonts/ibm-plex-mono-500-latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(fonts/ibm-plex-mono-500-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Onest';
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+  src: url(fonts/onest-400-800-cyrillic-ext.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+/* cyrillic */
+@font-face {
+  font-family: 'Onest';
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+  src: url(fonts/onest-400-800-cyrillic.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+/* latin-ext */
+@font-face {
+  font-family: 'Onest';
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+  src: url(fonts/onest-400-800-latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Onest';
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+  src: url(fonts/onest-400-800-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Presentation and controls: every action stays available without motion. */
+[hidden]{display:none!important}
+:root[data-theme="dark"]{color-scheme:dark;--bg:#101210;--surface:#171b16;--surface-2:#1c211a;--ink:#f0f1e9;--muted:#a4aca0;--subtle:#7e8a78;--accent:#c3f56b;--accent-ink:#142005;--line:#333b2e;--grid:rgba(181,202,162,.055);--alert:#efaa73;--header:rgba(16,18,16,.95);--glow:rgba(159,212,87,.065)}
+:root[data-theme="light"]{color-scheme:light;--bg:#f3f4ed;--surface:#e9ede0;--surface-2:#e2e8d8;--ink:#192216;--muted:#515e47;--subtle:#5a6d4e;--accent:#416813;--accent-ink:#f8ffe9;--line:#c8d0bd;--grid:rgba(44,65,21,.075);--alert:#975021;--header:rgba(243,244,237,.95);--glow:rgba(99,140,43,.1)}
+html{scroll-behavior:smooth}body:before{display:none}.hero:before{animation:none}.cursor,.loader,.scan{display:none!important}
+button,input,select{font:inherit}button,a,summary,input,select{touch-action:manipulation}summary{cursor:pointer}input:focus-visible,select:focus-visible{outline:2px solid var(--accent);outline-offset:4px}button:disabled{cursor:default}.js-only{display:none}.js .js-only{display:inline-flex}
+.nav-inner{gap:24px;height:80px}.nav-links{gap:22px;font-size:13px}.nav-actions{gap:10px}.nav-resume{min-height:44px}.icon-button{width:44px;height:44px}.brand-copy{font-size:9px}.language-select{height:44px;min-width:74px;padding:0 9px;background:var(--surface);color:var(--ink);border:1px solid var(--line);font-family:var(--mono);font-size:12px;border-radius:0}
+.preferences{position:relative;z-index:32}.preferences>summary{list-style:none;width:44px;height:44px;border:1px solid var(--line);display:grid;place-items:center;background:var(--surface)}.preferences>summary::-webkit-details-marker{display:none}.preferences[open]>summary{border-color:var(--accent);color:var(--accent)}.preferences svg{width:19px;height:19px}.prefs-panel{position:absolute;right:0;top:calc(100% + 12px);width:min(300px,calc(100vw - 40px));padding:20px;background:var(--bg);border:1px solid var(--line);box-shadow:0 18px 50px #0003}.prefs-panel fieldset{border:0;padding:0;margin:0}.prefs-panel legend,.prefs-heading{font-size:12px;color:var(--muted);margin-bottom:12px;letter-spacing:.02em}.theme-options{display:grid;grid-template-columns:repeat(3,1fr);gap:5px}.theme-option{position:relative}.theme-option input{position:absolute;opacity:0;width:1px;height:1px}.theme-option span{display:grid;place-items:center;min-height:44px;font-size:11px;line-height:1.3;text-align:center;border:1px solid var(--line);padding:6px 3px;cursor:pointer}.theme-option input:checked+span{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}.theme-option input:focus-visible+span{outline:2px solid var(--accent);outline-offset:3px}.motion-control{display:flex;align-items:center;justify-content:space-between;gap:10px;width:100%;background:var(--surface);border:1px solid var(--line);padding:12px;margin-top:16px;min-height:48px;font-size:12px}.motion-control[aria-pressed="true"]{border-color:var(--accent)}.prefs-note{font-size:11px;color:var(--muted);margin-top:13px;line-height:1.6}
+.hero{padding-top:35px}.hero-grid{grid-template-columns:1.35fr .75fr;gap:65px;padding:40px 0 46px;align-items:center}.hero-copy{max-width:760px}h1{font-size:clamp(60px,7.3vw,108px);line-height:1.03}.role{font-family:var(--font);font-size:clamp(20px,2vw,29px);line-height:1.35;letter-spacing:-.025em;color:var(--ink);margin:25px 0 0;min-height:0;max-width:650px}.hero-specialties{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:17px;color:var(--accent);font-size:11px;line-height:1.65}.hero-specialties span{display:inline-flex;align-items:center;gap:8px}.hero-specialties span:before{content:"";width:4px;height:4px;border-radius:50%;background:currentColor}.hero-offer{font-size:16px;line-height:1.75;margin-top:22px;max-width:620px}.hero-buttons{margin-top:28px}.hero-buttons .button{font-size:13px;min-height:52px}.hero-footnote{font-size:11px;line-height:1.8}.hero-bottom{font-size:11px}.hero-bottom .right-note{letter-spacing:0;text-transform:none;font-family:var(--font);font-size:12px}
+.portrait-wrap{padding:0;perspective:none}.portrait{max-width:360px;aspect-ratio:auto;max-height:none;box-shadow:12px 12px 0 var(--surface)}.portrait:before,.portrait:after,.portrait-tag{display:none}.portrait-photo{position:relative;inset:auto;width:100%;height:auto;object-fit:contain;object-position:center}.portrait-fallback{height:auto;aspect-ratio:384 / 467}.portrait-bottom{position:relative;inset:auto;width:100%;min-width:0;max-width:none;padding:16px 18px;border:0;border-top:1px solid var(--line);background:var(--surface);align-items:center;gap:12px}.portrait-bottom p{font-size:10px}.portrait-bottom strong{font-size:12px}.portrait-bottom .status-dot{margin-left:0;animation:none}.orbit{width:76%}
+.section{padding-block:88px}.section-head p{font-size:15px}.metric-note{font-size:11px;line-height:1.65}.metric-label{line-height:1.5}.experience-item li,.experience-description{font-size:14px;line-height:1.8}.experience-date{font-size:11px}.experience-item.current .timeline-dot:after{animation:none;opacity:.4}.section-label{font-size:11px}.stack-category{font-size:15px}.stack-row{align-items:start}.stack-content{min-width:0}.stack-use{margin-top:15px;font-size:13px;color:var(--muted);max-width:640px}.stack-use summary{display:flex;justify-content:space-between;gap:20px;align-items:center;min-height:44px;color:var(--ink);list-style:none;border-top:1px solid var(--line);padding:12px 0}.stack-use summary::-webkit-details-marker{display:none}.stack-use summary:after{content:"+";color:var(--accent);font-family:var(--mono)}.stack-use[open] summary:after{content:"−"}.stack-use p{padding:0 0 10px;line-height:1.8}.skill-number{font-family:var(--mono);color:var(--subtle);font-size:11px}.js .cert-toolbar{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:0 0 22px}.search-label{font-size:12px;color:var(--muted)}.cert-search{height:48px;flex:1;min-width:190px;max-width:420px;padding:12px 15px;border:1px solid var(--line);color:var(--ink);background:var(--surface);border-radius:0;font-size:14px}.cert-empty{font-size:14px;color:var(--muted);border:1px solid var(--line);padding:25px}.cert-card h3{line-height:1.3}.cert-card ul{font-size:13px}.cert-card strong{font-size:11px}.cert-bottom{font-size:10px}.cert-hint{font-size:12px}.record-badge:after{display:none}.education .degree{line-height:1.7}
+.contact-title{max-width:1000px;font-size:clamp(36px,5.1vw,78px)}.contact-title .accent{display:block}.contact-actions{gap:10px}.contact-actions .button{font-size:13px}.contact-utils{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}.utility-button{background:var(--surface);border:1px solid var(--line);color:var(--ink);padding:12px 15px;display:inline-flex;align-items:center;justify-content:center;gap:10px;font-size:12px;min-height:46px;line-height:1.4}.utility-button:hover{border-color:var(--accent)}.contact-details{display:flex;gap:26px;flex-wrap:wrap;margin-top:24px;font-family:var(--mono);font-size:12px;overflow-wrap:anywhere;color:var(--muted)}.footer{font-size:12px;line-height:1.8;margin-top:55px}.footer-code{margin-top:8px}.footer-code a{display:inline-flex;align-items:center;gap:6px;min-height:44px}.footer a:focus-visible{outline-offset:2px}
+.mobile-dock{display:none}.toast{position:fixed;bottom:28px;left:50%;transform:translateX(-50%);z-index:70;max-width:calc(100vw - 32px);padding:12px 18px;background:var(--ink);color:var(--bg);border:1px solid var(--line);font-size:13px;text-align:center;box-shadow:0 6px 20px #0003}.copy-dialog{background:var(--bg);color:var(--ink);border:1px solid var(--line);padding:24px;width:min(440px,calc(100vw - 32px))}.copy-dialog::backdrop{background:#0008}.dialog-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:18px}.dialog-head h2{font-size:22px;line-height:1.3}.copy-dialog p{font-size:13px;color:var(--muted);margin-bottom:14px}.copy-dialog input{width:100%;height:48px;padding:10px;background:var(--surface);color:var(--ink);border:1px solid var(--line);font-size:13px}.copy-dialog .button{margin-top:18px;width:100%;justify-content:center}.reveal-pending{opacity:0;transform:translateY(14px)}.reveal-visible{opacity:1;transform:none;transition:opacity .5s ease,transform .5s ease}.motion-paused .reveal-pending{opacity:1;transform:none}.motion-paused html,html:has(.motion-paused){scroll-behavior:auto}
+@media(max-width:1180px){.nav-inner{gap:18px}.nav-links{gap:16px}.brand-copy{display:none}.hero-grid{gap:40px}.portrait{max-width:330px}.nav-resume{font-size:11px}.nav-actions{gap:8px}}
+@media(min-width:761px) and (max-width:950px){.nav-links{gap:12px;font-size:11px}.nav-inner{gap:12px}.nav-resume{display:none}.hero-grid{gap:28px;grid-template-columns:1.2fr .8fr}.role{font-size:21px}.hero-specialties{font-size:10px}h1{font-size:8.3vw}.portrait{box-shadow:7px 7px 0 var(--surface)}.portrait-bottom{padding:12px}.portrait-bottom strong{font-size:11px}}
+@media(max-width:760px){
+  .wrap{padding-left:max(20px,env(safe-area-inset-left));padding-right:max(20px,env(safe-area-inset-right))}.nav-inner{min-height:68px;height:auto;gap:8px;padding-block:8px}.brand-copy{display:none}.nav-actions{gap:7px}.language-select{min-width:68px;font-size:11px}.menu-toggle{padding-inline:10px;font-size:11px;gap:7px}.nav-links{font-size:14px;gap:6px}.nav-resume{display:none}.prefs-panel{right:-86px;max-width:calc(100vw - 40px)}
+  .hero{padding-top:24px}.hero-grid{grid-template-columns:minmax(0,1fr);gap:30px;padding-top:26px;padding-bottom:30px}h1{font-size:clamp(46px,12.6vw,84px);line-height:1.04;letter-spacing:-.06em}.role{font-size:clamp(20px,5.2vw,27px);line-height:1.35;margin-top:22px;max-width:580px}.hero-specialties{font-size:10px;gap:8px 14px;margin-top:15px}.hero-offer{font-size:15px;line-height:1.75;margin-top:20px}.hero-buttons{grid-template-columns:1fr 1fr;gap:8px;margin-top:24px}.hero-buttons .button{font-size:12px;min-height:52px;gap:9px;padding:13px 12px;justify-content:space-between}.hero-buttons .button:not(.button-primary){background:var(--surface);border-color:var(--line);justify-content:space-between;padding:13px 12px;min-height:52px}.hero-footnote{font-size:10px;margin-top:18px}.portrait{max-width:320px;box-shadow:8px 8px 0 var(--surface)}.portrait-bottom{padding:14px 16px}.portrait-bottom p{font-size:10px}.portrait-bottom strong{font-size:12px}.hero-bottom{font-size:10px;padding:12px 0 18px}.hero-bottom .right-note{display:none}
+  .section{padding-block:58px}.about-statement{font-size:29px}.experience-item li,.experience-description{font-size:14px;line-height:1.8}.stack-use{font-size:14px;margin-top:12px}.stack-use summary{font-size:13px}.cert-toolbar{align-items:stretch;gap:8px;margin-bottom:20px}.search-label{flex-basis:100%;font-size:12px}.cert-search{max-width:none;width:100%;min-width:0}.cert-track{grid-auto-columns:92%;align-items:stretch}.cert-card{min-height:0}.cert-card ul{font-size:14px}.cert-card h3{font-size:21px}.cert-controls .icon-button{width:44px}.contact-title{font-size:clamp(30px,8.1vw,49px);line-height:1.2}.contact-title br{display:initial}.contact-title .accent{display:inline}.contact-utils{display:grid;grid-template-columns:1fr 1fr;gap:8px}.contact-utils .utility-button{font-size:11px;padding:12px 9px}.contact-details{display:grid;gap:10px;font-size:12px}.contact-actions{grid-template-columns:1fr 1fr}.contact-actions .button{font-size:12px}.contact-actions .button:nth-child(n+3){grid-column:auto}.contact-actions .button:last-child{grid-column:1/-1}.footer{margin-top:35px;padding-bottom:12px}.footer-left{align-items:center}.footer-right{font-size:12px;line-height:1.8}.footer-code{margin-top:6px}.contact{padding-bottom:max(28px,env(safe-area-inset-bottom))}
+  .mobile-dock{position:fixed;z-index:35;bottom:0;left:0;right:0;display:flex;gap:8px;padding:10px max(16px,env(safe-area-inset-right)) max(10px,env(safe-area-inset-bottom)) max(16px,env(safe-area-inset-left));background:var(--bg);border-top:1px solid var(--line);box-shadow:0 -8px 24px #0001}.mobile-dock a{flex:1;min-height:46px;justify-content:center;font-size:12px;padding:12px}.mobile-dock a:last-child{flex:0 0 110px}.toast{bottom:calc(88px + env(safe-area-inset-bottom))}.dialog-head h2{font-size:20px}
+}
+@media(max-width:360px){.wrap{padding-left:max(16px,env(safe-area-inset-left));padding-right:max(16px,env(safe-area-inset-right))}.hero-buttons{grid-template-columns:1fr}.contact-actions{grid-template-columns:1fr}.contact-actions .button:nth-child(n){grid-column:auto}.contact-utils{grid-template-columns:1fr}.portrait{max-width:290px}.hero-specialties{font-size:10px}.nav-actions{gap:5px}.language-select{min-width:61px}.prefs-panel{right:-83px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal-pending{opacity:1;transform:none}.reveal-visible{transition:none}}
+@media print{.cert-track[hidden]{display:block!important}.cert-empty{display:none!important}.preferences,.language-select,.mobile-dock,.contact-utils,.cert-toolbar,.toast,.copy-dialog{display:none!important}.cert-card[hidden],.cert-card li[hidden]{display:flex!important}.reveal-pending{opacity:1;transform:none}.stack-use p{display:block}.hero-specialties{color:#333}.role{color:#111;font-size:16pt;margin-top:15px}.section{padding-block:24px}}
+
+html:not(.js) .menu-toggle{display:none}
+
+</style>
   <script>
-    // Прелоадер работает независимо от CDN и скрывается максимум через 1,1 с.
-    document.documentElement.classList.add('js');
-    if(matchMedia('(prefers-reduced-motion: reduce)').matches) document.documentElement.classList.add('reduced');
+  document.documentElement.classList.add('js');
+  try { const theme=localStorage.getItem('as-theme');if(theme==='dark'||theme==='light')document.documentElement.dataset.theme=theme; } catch {}
   </script>
-  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-  <script defer src="https://cdn.jsdelivr.net/npm/lenis@1.1.20/dist/lenis.min.js"></script>
 </head>
 <body>
   <a class="skip" href="#main">Перейти к содержимому</a>
-  <div class="loader" aria-hidden="true"><div class="loader-inner"><div class="loader-label mono"><span>инициализация мониторинга…</span><span>01</span></div><div class="loader-line"></div></div></div>
-  <div class="cursor" aria-hidden="true"></div>
   <header class="topbar">
     <div class="wrap nav-inner">
       <a class="brand" href="#home" aria-label="Адиль Сарсембек — начало"><span class="brand-mark">АС</span><span class="brand-copy mono">Adil Sarsembek<br>Information security</span></a>
-      <nav class="nav-links" id="main-navigation" aria-label="Основная навигация"><a href="#about">Профиль</a><a href="#experience">Опыт</a><a href="#stack">Компетенции</a><a href="#contact">Контакты</a></nav>
-      <div class="nav-actions"><button class="icon-button" id="motion-toggle" type="button" aria-label="Приостановить анимации" aria-pressed="false" title="Приостановить анимации"><span aria-hidden="true" id="motion-symbol">Ⅱ</span></button><button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="main-navigation"><span>Меню</span><span class="menu-icon" aria-hidden="true"></span></button><a class="nav-resume" href="resume.pdf" download>Резюме PDF <span class="arrow" aria-hidden="true">↗</span></a></div>
+      <nav class="nav-links" id="main-navigation" aria-label="Основная навигация"><a href="#about">Профиль</a><a href="#experience">Опыт</a><a href="#stack">Компетенции</a><a href="#education">Обучение</a><a href="#contact">Контакты</a></nav>
+      <div class="nav-actions">
+        <label class="sr-only" for="language-select">Язык сайта</label>
+        <select class="language-select js-only" id="language-select" aria-label="Язык сайта"><option value="ru" lang="ru">RU</option><option value="kk" lang="kk">ҚАЗ</option><option value="en" lang="en">EN</option></select>
+        <details class="preferences js-only" id="preferences"><summary aria-label="Настройки отображения" title="Настройки отображения"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 7h16M4 17h16"/><circle cx="9" cy="7" r="3" fill="var(--surface)"/><circle cx="15" cy="17" r="3" fill="var(--surface)"/></svg></summary>
+          <div class="prefs-panel"><fieldset><legend>Тема оформления</legend><div class="theme-options"><label class="theme-option"><input type="radio" name="theme" value="system" checked><span>Системная</span></label><label class="theme-option"><input type="radio" name="theme" value="light"><span>Светлая</span></label><label class="theme-option"><input type="radio" name="theme" value="dark"><span>Тёмная</span></label></div></fieldset>
+          <button class="motion-control" id="motion-toggle" type="button" aria-label="Приостановить анимации" aria-pressed="false"><span id="motion-label">Анимации включены</span><span id="motion-symbol" aria-hidden="true">Ⅱ</span></button><p class="prefs-note">Настройки сохраняются на этом устройстве.</p></div>
+        </details>
+        <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="main-navigation"><span>Меню</span><span class="menu-icon" aria-hidden="true"></span></button><a class="nav-resume" href="resume.pdf" download>Резюме PDF · RU <span aria-hidden="true">↓</span></a>
+      </div>
     </div><div class="progress" aria-hidden="true"></div>
   </header>
   <main id="main">
@@ -94,16 +248,17 @@
         <div class="eyebrow mono"><span class="eyebrow-left"><span class="status-dot" aria-hidden="true"></span>Информационная безопасность</span><span class="location">Астана, Казахстан / KZ</span></div>
         <div class="hero-grid">
           <div class="hero-copy">
-            <p class="role"><span aria-hidden="true">&gt; </span><span class="sr-only">Специалист по информационной безопасности</span><span id="typed-role" aria-hidden="true">Специалист по информационной безопасности</span><span class="type-cursor" aria-hidden="true"></span></p>
             <h1 id="name"><span class="name-line"><span>Адиль</span></span><span class="name-line"><span>Сарсембек</span></span></h1>
+            <p class="role">Специалист по информационной безопасности</p>
+            <div class="hero-specialties mono"><span>Мониторинг</span><span>Инциденты</span><span>Автоматизация</span></div>
             <p class="hero-offer hero-entrance"><strong>Мониторинг и сопровождение государственных информационных систем:</strong> анализирую журналы событий, диагностирую инциденты и довожу их устранение до результата.</p>
-            <div class="hero-buttons hero-entrance"><a class="button button-primary magnetic" href="#contact">Связаться со мной <span class="arrow" aria-hidden="true">↗</span></a><a class="button magnetic" href="#experience">Посмотреть опыт <span class="arrow" aria-hidden="true">↓</span></a></div>
+            <div class="hero-buttons hero-entrance" id="hero-actions"><a class="button button-primary magnetic" href="#contact">Связаться со мной <span class="arrow" aria-hidden="true">↗</span></a><a class="button magnetic" href="resume.pdf" download>Резюме PDF · RU <span class="arrow" aria-hidden="true">↓</span></a></div>
             <div class="hero-footnote mono hero-entrance"><span>Работа в офисе</span><span>Готов к командировкам</span></div>
           </div>
           <div class="portrait-wrap hero-entrance">
             <!-- ФОТО: исходный цветной portrait.png рядом с index.html. Цветовой фильтр не применяется. -->
             <div class="portrait" id="portrait">
-              <img class="portrait-photo" id="portrait-photo" src="portrait.png" alt="Адиль Сарсембек в деловом костюме" width="384" height="467" hidden onload="this.hidden=false" onerror="this.hidden=true">
+              <img class="portrait-photo" id="portrait-photo" src="portrait.png" alt="Адиль Сарсембек в деловом костюме" width="384" height="467" decoding="async" fetchpriority="high" onerror="this.hidden=true">
               <div class="portrait-fallback" role="img" aria-label="Инициалы Адиля Сарсембека; портрет пока не добавлен"><div class="portrait-grid"></div><div class="portrait-cross"></div><div class="orbit"><div class="orbit-line"></div></div><span class="portrait-initials">АС</span></div>
               <div class="portrait-tag mono" aria-hidden="true"><span>[ AS / PROFILE ]</span><span>INFOSEC</span></div>
               <div class="portrait-bottom"><div><p class="mono">Мониторинг / Инциденты</p><strong>От события — к результату.</strong></div><span class="status-dot" aria-hidden="true"></span></div>
@@ -111,10 +266,9 @@
             </div>
           </div>
         </div>
-        <div class="hero-bottom mono"><a href="#about" class="scroll-link"><span class="scroll-icon" aria-hidden="true">↓</span>Листайте, чтобы узнать больше</a><span class="right-note">Анализировать. Реагировать.<br>Проверять результат.</span></div>
+        <div class="hero-bottom mono"><a href="#experience" class="scroll-link"><span class="scroll-icon" aria-hidden="true">↓</span>Посмотреть опыт</a><span class="right-note">Анализировать. Реагировать.<br>Проверять результат.</span></div>
       </div>
     </section>
-    <div class="log-bar" aria-hidden="true"><span class="log-label mono">Демо · события</span><div class="log-window"><div class="log-track mono"><div class="log-set"><span><b>[OK]</b>PRTG sensor up</span><span><b>[INFO]</b>demo incident closed</span><span><b>[OK]</b>service check complete</span><span><b>[INFO]</b>log analysis complete</span></div><div class="log-set"><span><b>[OK]</b>PRTG sensor up</span><span><b>[INFO]</b>demo incident closed</span><span><b>[OK]</b>service check complete</span><span><b>[INFO]</b>log analysis complete</span></div></div></div></div>
     <section class="section wrap" id="about" aria-labelledby="about-title">
       <div class="section-label mono" data-reveal><span class="index">01 /</span>Профиль</div>
       <div class="about-copy"><h2 class="about-statement" id="about-title" data-reveal>Вижу за событиями<br>состояние системы.<br><span class="muted">И следующий шаг.</span></h2><div class="about-body" data-reveal><p>Специалист по ИБ с опытом мониторинга и сопровождения государственных информационных систем. Работаю с Linux, Windows Server, SQL, Python и Bash; участвую в организации доступов и разработке регламентов.</p><p><a class="text-link" href="#stack">Технологии и инструменты <span aria-hidden="true">↗</span></a></p></div></div>
@@ -140,11 +294,11 @@
       <div class="section-label mono" data-reveal><span class="index">03 /</span>Компетенции</div>
       <div class="section-head" data-reveal><h2 id="stack-title">Инструменты<br>под задачу.</h2><p>От журналов событий и SQL-запросов<br>до скриптов мониторинга и регламентов.</p></div>
       <div class="stack-list">
-        <div class="stack-row" data-reveal><div class="stack-category"><span class="mono">01</span>Мониторинг и события</div><div class="chips"><span class="chip">PRTG</span><span class="chip">Zabbix</span><span class="chip">Grafana</span><span class="chip">Splunk</span><span class="chip">Cacti</span></div></div>
+        <div class="stack-row" data-reveal><div class="stack-category"><span class="mono">01</span>Мониторинг и события</div><div class="stack-content"><div class="chips"><span class="chip">PRTG</span><span class="chip">Zabbix</span><span class="chip">Grafana</span><span class="chip">Splunk</span><span class="chip">Cacti</span></div><details class="stack-use"><summary>Применение в работе</summary><p>Настраиваю PRTG, подключаю новые объекты и сопровождаю мониторинг информационных систем.</p></details></div></div>
         <div class="stack-row" data-reveal><div class="stack-category"><span class="mono">02</span>Операционные системы</div><div class="chips"><span class="chip">Linux</span><span class="chip">Windows Server</span></div></div>
-        <div class="stack-row" data-reveal><div class="stack-category"><span class="mono">03</span>Базы данных</div><div class="chips"><span class="chip">Oracle</span><span class="chip">PostgreSQL</span></div></div>
-        <div class="stack-row" data-reveal><div class="stack-category"><span class="mono">04</span>Скрипты</div><div class="chips"><span class="chip">Python</span><span class="chip">Bash</span></div></div>
-        <div class="stack-row" data-reveal><div class="stack-category"><span class="mono">05</span>Интеграции</div><div class="chips"><span class="chip">SOAP / REST API <small>базовые знания</small></span></div></div>
+        <div class="stack-row" data-reveal><div class="stack-category"><span class="mono">03</span>Базы данных</div><div class="stack-content"><div class="chips"><span class="chip">Oracle</span><span class="chip">PostgreSQL</span></div><details class="stack-use"><summary>Применение в работе</summary><p>Использую SQL-запросы при диагностике интеграционных сервисов и мониторинге информационных систем.</p></details></div></div>
+        <div class="stack-row" data-reveal><div class="stack-category"><span class="mono">04</span>Скрипты</div><div class="stack-content"><div class="chips"><span class="chip">Python</span><span class="chip">Bash</span></div><details class="stack-use"><summary>Применение в работе</summary><p>Дорабатываю скрипты Python и Bash для задач мониторинга.</p></details></div></div>
+        <div class="stack-row" data-reveal><div class="stack-category"><span class="mono">05</span>Интеграции</div><div class="stack-content"><div class="chips"><span class="chip">SOAP / REST API <small>базовые знания</small></span></div><details class="stack-use"><summary>Применение в работе</summary><p>Базовые знания SOAP / REST API. Диагностирую интеграционные сервисы по журналам событий и SQL-данным.</p></details></div></div>
       </div>
       <div class="docs-strip" data-reveal><span>Профессиональная документация</span><div class="docs-items"><span>Требования и ТЗ</span><span>Регламенты</span><span>Отчёты и акты</span><span>Официальная переписка</span></div></div>
     </section>
@@ -154,6 +308,8 @@
     <section class="section learning wrap" id="education" aria-labelledby="learning-title">
       <div class="section-label mono" data-reveal><span class="index">04 /</span>Образование и развитие</div>
       <div class="section-head" data-reveal><h2 id="learning-title">Учиться.<br>Применять.</h2><div class="cert-controls"><button type="button" class="icon-button" id="cert-prev" aria-label="Предыдущие сертификаты"><span aria-hidden="true">←</span></button><button type="button" class="icon-button" id="cert-next" aria-label="Следующие сертификаты"><span aria-hidden="true">→</span></button></div></div>
+      <div class="cert-toolbar js-only"><label class="search-label" for="cert-search">Найти обучение</label><input class="cert-search" type="search" id="cert-search" placeholder="Например, Cisco или Python" aria-controls="cert-track" autocomplete="off"></div>
+      <p class="cert-empty" id="cert-empty" role="status" hidden>Ничего не найдено. Попробуйте другое название или год.</p>
       <div class="cert-track" id="cert-track" tabindex="0" role="region" aria-label="Обучение и сертификаты по годам, горизонтальная прокрутка">
         <article class="cert-card" data-reveal><div class="cert-year"><span class="year">2022</span><span class="mono">/ Foundation</span></div><h3>Основы кибербезопасности</h3><ul><li><strong>Cisco</strong>Introduction to Cybersecurity</li><li><strong>Cisco</strong>Cybersecurity Essentials</li></ul><p class="cert-bottom mono">Cisco / Cybersecurity</p></article>
         <article class="cert-card" data-reveal><div class="cert-year"><span class="year">2023</span><span class="mono">/ Operations</span></div><h3>Инфраструктура и защита</h3><ul><li><strong>Cisco</strong>IT Essentials</li><li><strong>Cisco</strong>CyberOps Associate</li><li><strong>Cisco</strong>Computer Networks Security</li></ul><p class="cert-bottom mono">Cisco / CyberOps</p></article>
@@ -166,143 +322,157 @@
     </section>
     <section class="contact wrap" id="contact" aria-labelledby="contact-title">
       <div class="section-label mono" data-reveal><span class="index">05 /</span>Контакты</div>
-      <h2 class="contact-title" id="contact-title" data-reveal><a href="mailto:adil04@Inbox.ru">Давайте обсудим<br>безопасность <span class="accent">вашей инфраструктуры <span class="arrow" aria-hidden="true">↗</span></span></a></h2>
-      <div class="contact-row" data-reveal><div class="contact-actions"><a class="button magnetic" href="https://t.me/adil10961" target="_blank" rel="noopener noreferrer" aria-label="Telegram @adil10961, откроется в новой вкладке">Telegram <span aria-hidden="true">↗</span></a><a class="button magnetic" href="mailto:adil04@Inbox.ru">Email <span aria-hidden="true">↗</span></a><a class="button magnetic" href="tel:+77085513925">+7 708 551 3925 <span aria-hidden="true">↗</span></a><a class="button magnetic" href="resume.pdf" download>Скачать резюме (PDF) <span aria-hidden="true">↓</span></a></div></div>
-      <div class="footer"><div class="footer-left"><a href="#home" class="brand-mark" aria-label="Вернуться к началу">АС</a><p class="mono">Адиль Сарсембек<br><a href="mailto:adil04@Inbox.ru">adil04@Inbox.ru</a></p></div><div class="footer-right"><p>Астана, Казахстан · Работа в офисе</p><p>Готов к командировкам · <a href="https://t.me/adil10961">@adil10961</a></p></div></div>
+      <h2 class="contact-title" id="contact-title" data-reveal><a href="mailto:adil04@Inbox.ru">Давайте обсудим <br>безопасность <span class="accent">вашей инфраструктуры <span class="arrow" aria-hidden="true">↗</span></span></a></h2>
+      <div class="contact-row" data-reveal><div class="contact-actions"><a class="button magnetic" href="https://t.me/adil10961" target="_blank" rel="noopener noreferrer" aria-label="Telegram @adil10961, откроется в новой вкладке">Telegram <span aria-hidden="true">↗</span></a><a class="button magnetic" href="mailto:adil04@Inbox.ru">Email <span aria-hidden="true">↗</span></a><a class="button magnetic" href="tel:+77085513925">+7 708 551 3925 <span aria-hidden="true">↗</span></a><a class="button magnetic" href="resume.pdf" download>Скачать резюме (PDF · RU) <span aria-hidden="true">↓</span></a></div></div>
+
+      <div class="contact-utils"><button class="utility-button js-only" type="button" data-copy="adil04@Inbox.ru">Скопировать email <span aria-hidden="true">⧉</span></button><button class="utility-button js-only" type="button" data-copy="+77085513925">Скопировать телефон <span aria-hidden="true">⧉</span></button><a class="utility-button" href="adil-sarsembek.vcf" download>Сохранить контакт <span aria-hidden="true">↓</span></a><button class="utility-button js-only" type="button" id="share-site">Поделиться сайтом <span aria-hidden="true">↗</span></button></div>
+      <div class="contact-details"><a href="mailto:adil04@Inbox.ru">adil04@Inbox.ru</a><a href="tel:+77085513925">+7 708 551 3925</a><a href="https://github.com/adil10961" target="_blank" rel="noopener noreferrer">GitHub / adil10961 ↗</a></div>
+      <div class="footer"><div class="footer-left"><a href="#home" class="brand-mark" aria-label="Вернуться к началу">АС</a><p class="mono">Адиль Сарсембек<br><a href="mailto:adil04@Inbox.ru">adil04@Inbox.ru</a></p></div><div class="footer-right"><p>Астана, Казахстан · Работа в офисе</p><p>Готов к командировкам · <a href="https://t.me/adil10961">@adil10961</a></p><p class="footer-code"><a href="https://github.com/adil10961/adil-sarsembek-resume" target="_blank" rel="noopener noreferrer">Код этого сайта <span aria-hidden="true">↗</span></a></p></div></div>
     </section>
   </main>
-  <script>
-  (() => {
-    'use strict';
-    // НАСТРОЙКИ МОУШНА: длительность, амплитуда и версия библиотек. Данные и ссылки находятся в HTML выше.
-    const reduceQuery = matchMedia('(prefers-reduced-motion: reduce)');
-    const finePointer = matchMedia('(hover: hover) and (pointer: fine) and (min-width: 761px)');
-    const mobileQuery = matchMedia('(max-width: 760px)');
-    const motionButton = document.getElementById('motion-toggle');
-    const typed = document.getElementById('typed-role');
-    const fullRole = typed.textContent;
-    let paused = reduceQuery.matches, lenis = null, gsapContext = null, typeTimer = null, ticker = null, cursorTick = null;
-    const menuButton=document.getElementById('menu-toggle'), header=document.querySelector('.topbar');
-    function closeMenu(returnFocus=false){header.classList.remove('menu-open');menuButton.setAttribute('aria-expanded','false');if(returnFocus)menuButton.focus();}
-    menuButton.addEventListener('click',()=>{const open=menuButton.getAttribute('aria-expanded')!=='true';header.classList.toggle('menu-open',open);menuButton.setAttribute('aria-expanded',String(open));});
-    document.addEventListener('keydown',event=>{if(event.key==='Escape'&&header.classList.contains('menu-open'))closeMenu(true);});
-    document.addEventListener('click',event=>{if(!header.contains(event.target))closeMenu();});
-    const sensorGrid = document.querySelector('.sensor-grid');
-    if(!mobileQuery.matches)for(let i=0;i<60;i++)sensorGrid.append(document.createElement('i'));
+  <nav class="mobile-dock" id="mobile-dock" aria-label="Быстрые действия" hidden><a class="button button-primary" href="#contact">Связаться <span aria-hidden="true">↗</span></a><a class="button" href="resume.pdf" download>PDF · RU <span aria-hidden="true">↓</span></a></nav>
+  <div id="toast" class="toast" role="status" aria-live="polite" data-no-translate hidden></div>
+  <dialog id="copy-dialog" class="copy-dialog" aria-labelledby="copy-title"><div class="dialog-head"><h2 id="copy-title">Скопировать вручную</h2><button class="icon-button" type="button" data-close-dialog aria-label="Закрыть">×</button></div><p>Выделите и скопируйте текст ниже.</p><input id="copy-value" type="text" readonly aria-label="Текст для копирования"><button class="button" type="button" data-close-dialog>Готово</button></dialog>
 
-    // Даже при недоступном CDN весь контент и нативные ссылки остаются рабочими.
-    function updateProgress(){
-      const max = document.documentElement.scrollHeight-innerHeight;
-      document.querySelector('.progress').style.transform = `scaleX(${max>0 ? Math.max(0,Math.min(1,scrollY/max)):0})`;
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": "Адиль Сарсембек", "alternateName": "Adil Sarsembek", "jobTitle": "Специалист по информационной безопасности", "url": "https://adil10961.github.io/adil-sarsembek-resume/", "image": "https://adil10961.github.io/adil-sarsembek-resume/portrait.png", "sameAs": ["https://github.com/adil10961", "https://t.me/adil10961"], "knowsLanguage": ["ru", "kk", "en"]}</script>
+<script id="translations" type="application/json">{"en": {"Адиль Сарсембек — специалист по информационной безопасности": "Adil Sarsembek — Information Security Specialist", "Адиль Сарсембек. Мониторинг и сопровождение государственных информационных систем, анализ журналов событий, диагностика и сопровождение устранения инцидентов. Астана, Казахстан.": "Adil Sarsembek. Monitoring and support of government information systems, event log analysis, incident diagnosis and coordination of resolution. Astana, Kazakhstan.", "Адиль Сарсембек — информационная безопасность": "Adil Sarsembek — Information Security", "Мониторинг. Диагностика. Контроль результата. Опыт, технический стек и контакты специалиста по ИБ.": "Monitoring. Diagnosis. Verification. Experience, technical skills and contact details of an information security specialist.", "Перейти к содержимому": "Skip to content", "инициализация мониторинга…": "initializing monitoring…", "Адиль Сарсембек — начало": "Adil Sarsembek — home", "АС": "AS", "Основная навигация": "Main navigation", "Профиль": "Profile", "Опыт": "Experience", "Компетенции": "Skills", "Контакты": "Contact", "Приостановить анимации": "Pause animations", "Меню": "Menu", "Резюме PDF": "Résumé PDF", "Информационная безопасность": "Information Security", "Астана, Казахстан / KZ": "Astana, Kazakhstan / KZ", "Специалист по информационной безопасности": "Information Security Specialist", "Адиль": "Adil", "Сарсембек": "Sarsembek", "Мониторинг и сопровождение государственных информационных систем:": "Monitoring and support of government information systems:", "анализирую журналы событий, диагностирую инциденты и довожу их устранение до результата.": "I analyze event logs, diagnose incidents and follow their resolution through to completion.", "Связаться со мной": "Get in touch", "Посмотреть опыт": "View experience", "Работа в офисе": "Office-based work", "Готов к командировкам": "Available for business travel", "Адиль Сарсембек в деловом костюме": "Adil Sarsembek in a business suit", "Инициалы Адиля Сарсембека; портрет пока не добавлен": "Adil Sarsembek’s initials; portrait not yet added", "Мониторинг / Инциденты": "Monitoring / Incidents", "От события — к результату.": "From event to resolution.", "Листайте, чтобы узнать больше": "Scroll to learn more", "Анализировать. Реагировать.": "Analyze. Respond.", "Проверять результат.": "Verify the result.", "Демо · события": "Demo · events", "Вижу за событиями": "I see the system’s health", "состояние системы.": "behind the events.", "И следующий шаг.": "And the next step.", "Специалист по ИБ с опытом мониторинга и сопровождения государственных информационных систем. Работаю с Linux, Windows Server, SQL, Python и Bash; участвую в организации доступов и разработке регламентов.": "Information security specialist with experience monitoring and supporting government information systems. I work with Linux, Windows Server, SQL, Python and Bash, and contribute to access coordination and operational procedures.", "Технологии и инструменты": "Technologies and tools", "Информационных систем": "Information systems", "В зоне ответственности подразделения": "Within the department’s scope of responsibility", "Примерно 2 500": "Approximately 2 500", "Датчиков мониторинга": "Monitoring sensors", "Участников HackAlem AI": "HackAlem AI participants", "Рекорд Guinness World Records.": "Guinness World Records record.", "Я — среди участников.": "I was among the participants.", "Опыт работы": "Work experience", "От сигнала": "From alert", "к решению.": "to resolution.", "Мониторинг инфраструктуры, диагностика инцидентов и сопровождение изменений.": "Infrastructure monitoring, incident diagnosis and change support.", "2023 — настоящее время": "2023 — present", "Ноябрь 2025 — настоящее время": "November 2025 — present", "Сейчас": "Current", "Ведущий эксперт-аналитик": "Lead Expert Analyst", "АО «Центр развития трудовых ресурсов»": "АО «Центр развития трудовых ресурсов»", "Настраиваю PRTG и подключаю новые объекты;": "I configure PRTG and connect new monitoring targets;", "дорабатываю скрипты Python/Bash и SQL-запросы для мониторинга ИС.": "I refine Python/Bash scripts and SQL queries for information system monitoring.", "Диагностирую интеграционные сервисы": "I diagnose integration services", "по логам и SQL-данным; координирую устранение инцидентов и проверяю результат.": "using logs and SQL data; I coordinate incident resolution and verify the result.", "Организую доступы и взаимодействие с ответственными подразделениями.": "I coordinate access and collaboration with the responsible departments.", "Собираю требования, описываю процессы, готовлю ТЗ и задачи разработчикам; проверяю реализацию.": "I gather requirements, document processes, prepare technical specifications and developer tasks, and verify implementation.", "Разрабатываю и согласовываю регламенты, готовлю отчёты и акты, веду официальную переписку с госорганами.": "I develop and coordinate approval of procedures, prepare reports and formal records, and handle official correspondence with government bodies.", "Март 2025 — ноябрь 2025": "March 2025 — November 2025", "Специалист по ИБ": "Information Security Specialist", "АО «Национальные информационные технологии»": "АО «Национальные информационные технологии»", "Регистрировал и анализировал инциденты,": "I recorded and analyzed incidents,", "определял ответственных, сопровождал устранение; работал с журналами событий.": "identified responsible teams, supported resolution and worked with event logs.", "Мониторил IT-инфраструктуру, ИС, сервисы и каналы связи; первичная диагностика и реакция на сбои.": "I monitored IT infrastructure, information systems, services and communication channels, providing initial diagnosis and response to failures.", "Анализировал и сопровождал запросы на изменения в ИС и сервисах.": "I analyzed and supported change requests for information systems and services.", "Июнь — октябрь 2024": "June — October 2024", "Техник": "Technician", "ТОО «КаР-Тел» · Beeline": "ТОО «КаР-Тел» · Beeline", "Подключение интернета, прокладка кабеля, роутеры, модемы, приставки, коммутаторы, консультации по услугам связи.": "Internet installation, cable routing, routers, modems, set-top boxes, switches and advice on telecommunications services.", "Март 2023": "March 2023", "Производственная практика": "Work placement", "РГП «Госградкадастр»": "РГП «Госградкадастр»", "Управление цифровизации и информационной безопасности.": "Digitalization and Information Security Department.", "Инструменты": "Tools", "под задачу.": "for the task.", "От журналов событий и SQL-запросов": "From event logs and SQL queries", "до скриптов мониторинга и регламентов.": "to monitoring scripts and operational procedures.", "Мониторинг и события": "Monitoring and events", "Операционные системы": "Operating systems", "Базы данных": "Databases", "Скрипты": "Scripting", "Интеграции": "Integrations", "базовые знания": "basic knowledge", "Профессиональная документация": "Professional documentation", "Требования и ТЗ": "Requirements and specifications", "Регламенты": "Procedures", "Отчёты и акты": "Reports and formal records", "Официальная переписка": "Official correspondence", "За пределами ежедневных задач / AI": "Beyond daily tasks / AI", "Участник международного AI-хакатона, установившего рекорд Guinness World Records по числу участников.": "Participant in an international AI hackathon that set a Guinness World Records record for the number of participants.", "23 сентября 2026": "23 September 2026", "Астана": "Astana", "Участник": "Participant", "Участников. Один хакатон.": "Participants. One hackathon.", "Guinness World Records · 2 415 участников": "Guinness World Records · 2 415 participants", "Образование и развитие": "Education and development", "Учиться.": "Learn.", "Применять.": "Apply.", "Предыдущие сертификаты": "Previous certificates", "Следующие сертификаты": "Next certificates", "Обучение и сертификаты по годам, горизонтальная прокрутка": "Courses and certificates by year, scroll horizontally", "Основы кибербезопасности": "Cybersecurity foundations", "Инфраструктура и защита": "Infrastructure and security", "Безопасность, код и AI": "Security, code and AI", "Endpoint Security; Python Essentials 1 и 2; Introduction to Modern AI": "Endpoint Security; Python Essentials 1 and 2; Introduction to Modern AI", "Терминал Linux. Основы; Docker для начинающих": "Linux Terminal. Fundamentals; Docker for Beginners", "Основы промпт-инжиниринга": "Prompt Engineering Fundamentals", "Основы ИИ": "AI Fundamentals", "Листайте карточки в сторону или используйте стрелки →": "Swipe through the cards or use the arrows →", "В процессе:": "In progress:", "Высшее образование": "Higher education", "Кибербезопасность": "Cybersecurity", "Дипломная работа · целевой фишинг": "Thesis · targeted phishing", "«Разработка метода по анализу техник противодействия целевой фишинговой атаке».": "“Developing a method for analyzing techniques to counter a targeted phishing attack”.", "Языки": "Languages", "Казахский": "Kazakh", "родной": "native", "Русский": "Russian", "свободный": "fluent", "Английский": "English", "разговорный": "conversational", "Давайте обсудим": "Let’s discuss", "безопасность": "the security of", "вашей инфраструктуры": "your infrastructure", "Telegram @adil10961, откроется в новой вкладке": "Telegram @adil10961, opens in a new tab", "Скачать резюме (PDF)": "Download résumé (PDF)", "Вернуться к началу": "Back to top", "Адиль Сарсембек": "Adil Sarsembek", "Астана, Казахстан · Работа в офисе": "Astana, Kazakhstan · Office-based work", "Готов к командировкам ·": "Available for business travel ·", "Автоматизация": "Automation", "Анимации включены": "Animations on", "Анимации выключены": "Animations off", "Базовые знания SOAP / REST API. Диагностирую интеграционные сервисы по журналам событий и SQL-данным.": "Basic knowledge of SOAP / REST API. I diagnose integration services using event logs and SQL data.", "Быстрые действия": "Quick actions", "Включить анимации": "Enable animations", "Выделите и скопируйте текст ниже.": "Select and copy the text below.", "Готово": "Done", "Дорабатываю скрипты Python и Bash для задач мониторинга.": "I refine Python and Bash scripts for monitoring tasks.", "Закрыть": "Close", "Инциденты": "Incidents", "Использую SQL-запросы при диагностике интеграционных сервисов и мониторинге информационных систем.": "I use SQL queries to diagnose integration services and monitor information systems.", "Код этого сайта": "This site’s code", "Мониторинг": "Monitoring", "Найти обучение": "Search courses", "Например, Cisco или Python": "For example, Cisco or Python", "Настраиваю PRTG, подключаю новые объекты и сопровождаю мониторинг информационных систем.": "I configure PRTG, connect new monitoring targets and support information system monitoring.", "Настройки отображения": "Display settings", "Настройки сохраняются на этом устройстве.": "Settings are saved on this device.", "Ничего не найдено. Попробуйте другое название или год.": "No results found. Try another title or year.", "Обучение": "Learning", "Поделиться сайтом": "Share this site", "Применение в работе": "How I use these skills", "Светлая": "Light", "Связаться": "Contact", "Системная": "System", "Скопировано": "Copied", "Скопировать email": "Copy email", "Скопировать вручную": "Copy manually", "Скопировать телефон": "Copy phone number", "Сохранить контакт": "Save contact", "Ссылка скопирована": "Link copied", "Текст для копирования": "Text to copy", "Тема оформления": "Theme", "Тёмная": "Dark", "Язык сайта": "Site language", "ҚАЗ": "ҚАЗ", "Резюме PDF · RU": "Resume PDF · RU", "Скачать резюме (PDF · RU)": "Download resume (PDF · RU)"}, "kk": {"Адиль Сарсембек — специалист по информационной безопасности": "Адиль Сарсембек — ақпараттық қауіпсіздік маманы", "Адиль Сарсембек. Мониторинг и сопровождение государственных информационных систем, анализ журналов событий, диагностика и сопровождение устранения инцидентов. Астана, Казахстан.": "Адиль Сарсембек. Мемлекеттік ақпараттық жүйелерді мониторингтеу және сүйемелдеу, оқиғалар журналын талдау, инциденттерді диагностикалау және жоюды сүйемелдеу. Астана, Қазақстан.", "Адиль Сарсембек — информационная безопасность": "Адиль Сарсембек — ақпараттық қауіпсіздік", "Мониторинг. Диагностика. Контроль результата. Опыт, технический стек и контакты специалиста по ИБ.": "Мониторинг. Диагностика. Нәтижені тексеру. Ақпараттық қауіпсіздік маманының тәжірибесі, техникалық дағдылары және байланыс деректері.", "Перейти к содержимому": "Мазмұнға өту", "инициализация мониторинга…": "мониторинг іске қосылуда…", "Адиль Сарсембек — начало": "Адиль Сарсембек — басты бет", "АС": "АС", "Основная навигация": "Негізгі навигация", "Профиль": "Мен туралы", "Опыт": "Тәжірибе", "Компетенции": "Құзыреттер", "Контакты": "Байланыс", "Приостановить анимации": "Анимацияны кідірту", "Меню": "Мәзір", "Резюме PDF": "Түйіндеме PDF", "Информационная безопасность": "Ақпараттық қауіпсіздік", "Астана, Казахстан / KZ": "Астана, Қазақстан / KZ", "Специалист по информационной безопасности": "Ақпараттық қауіпсіздік маманы", "Адиль": "Адиль", "Сарсембек": "Сарсембек", "Мониторинг и сопровождение государственных информационных систем:": "Мемлекеттік ақпараттық жүйелерді мониторингтеу және сүйемелдеу:", "анализирую журналы событий, диагностирую инциденты и довожу их устранение до результата.": "оқиғалар журналын талдаймын, инциденттерді диагностикалаймын және олардың жойылуын соңына дейін сүйемелдеймін.", "Связаться со мной": "Хабарласу", "Посмотреть опыт": "Тәжірибені қарау", "Работа в офисе": "Кеңседе жұмыс істеу", "Готов к командировкам": "Іссапарларға дайынмын", "Адиль Сарсембек в деловом костюме": "Іскерлік костюм киген Адиль Сарсембек", "Инициалы Адиля Сарсембека; портрет пока не добавлен": "Адиль Сарсембектің аты-жөнінің бас әріптері; портрет әлі қосылмаған", "Мониторинг / Инциденты": "Мониторинг / Инциденттер", "От события — к результату.": "Оқиғадан — нәтижеге.", "Листайте, чтобы узнать больше": "Толығырақ білу үшін төмен жылжытыңыз", "Анализировать. Реагировать.": "Талдау. Әрекет ету.", "Проверять результат.": "Нәтижені тексеру.", "Демо · события": "Демо · оқиғалар", "Вижу за событиями": "Оқиғалардан жүйенің", "состояние системы.": "жағдайын көремін.", "И следующий шаг.": "Әрі келесі қадамды.", "Специалист по ИБ с опытом мониторинга и сопровождения государственных информационных систем. Работаю с Linux, Windows Server, SQL, Python и Bash; участвую в организации доступов и разработке регламентов.": "Мемлекеттік ақпараттық жүйелерді мониторингтеу және сүйемелдеу тәжірибесі бар ақпараттық қауіпсіздік маманымын. Linux, Windows Server, SQL, Python және Bash технологияларымен жұмыс істеймін; қолжетімділікті ұйымдастыруға және регламенттер әзірлеуге қатысамын.", "Технологии и инструменты": "Технологиялар мен құралдар", "Информационных систем": "Ақпараттық жүйе", "В зоне ответственности подразделения": "Бөлімшенің жауапкершілік аясында", "Примерно 2 500": "Шамамен 2 500", "Датчиков мониторинга": "Мониторинг датчигі", "Участников HackAlem AI": "HackAlem AI қатысушысы", "Рекорд Guinness World Records.": "Guinness World Records рекорды.", "Я — среди участников.": "Мен де қатысушылар қатарындамын.", "Опыт работы": "Жұмыс тәжірибесі", "От сигнала": "Дабылдан", "к решению.": "шешімге дейін.", "Мониторинг инфраструктуры, диагностика инцидентов и сопровождение изменений.": "Инфрақұрылымды мониторингтеу, инциденттерді диагностикалау және өзгерістерді сүйемелдеу.", "2023 — настоящее время": "2023 — қазіргі уақытқа дейін", "Ноябрь 2025 — настоящее время": "2025 жылғы қараша — қазіргі уақытқа дейін", "Сейчас": "Қазір", "Ведущий эксперт-аналитик": "Жетекші сарапшы-талдаушы", "АО «Центр развития трудовых ресурсов»": "АО «Центр развития трудовых ресурсов»", "Настраиваю PRTG и подключаю новые объекты;": "PRTG баптаймын және жаңа нысандарды қосамын;", "дорабатываю скрипты Python/Bash и SQL-запросы для мониторинга ИС.": "ақпараттық жүйелерді мониторингтеу үшін Python/Bash скрипттері мен SQL сұрауларын жетілдіремін.", "Диагностирую интеграционные сервисы": "Интеграциялық сервистердің ақауларын", "по логам и SQL-данным; координирую устранение инцидентов и проверяю результат.": "журналдар мен SQL деректері арқылы анықтаймын; инциденттерді жоюды үйлестіріп, нәтижесін тексеремін.", "Организую доступы и взаимодействие с ответственными подразделениями.": "Қолжетімділікті және жауапты бөлімшелермен өзара іс-қимылды ұйымдастырамын.", "Собираю требования, описываю процессы, готовлю ТЗ и задачи разработчикам; проверяю реализацию.": "Талаптарды жинаймын, процестерді сипаттаймын, техникалық тапсырмалар мен әзірлеушілерге міндеттер дайындаймын; іске асырылуын тексеремін.", "Разрабатываю и согласовываю регламенты, готовлю отчёты и акты, веду официальную переписку с госорганами.": "Регламенттерді әзірлеп, келісемін, есептер мен актілер дайындаймын, мемлекеттік органдармен ресми хат алмасамын.", "Март 2025 — ноябрь 2025": "2025 жылғы наурыз — қараша", "Специалист по ИБ": "Ақпараттық қауіпсіздік маманы", "АО «Национальные информационные технологии»": "АО «Национальные информационные технологии»", "Регистрировал и анализировал инциденты,": "Инциденттерді тіркеп, талдадым,", "определял ответственных, сопровождал устранение; работал с журналами событий.": "жауаптыларды анықтап, жоюды сүйемелдедім; оқиғалар журналдарымен жұмыс істедім.", "Мониторил IT-инфраструктуру, ИС, сервисы и каналы связи; первичная диагностика и реакция на сбои.": "IT-инфрақұрылымды, ақпараттық жүйелерді, сервистер мен байланыс арналарын мониторингтедім; ақауларды бастапқы диагностикалау және оларға әрекет ету жұмыстарын атқардым.", "Анализировал и сопровождал запросы на изменения в ИС и сервисах.": "Ақпараттық жүйелер мен сервистерге өзгеріс енгізу сұрауларын талдап, сүйемелдедім.", "Июнь — октябрь 2024": "2024 жылғы маусым — қазан", "Техник": "Техник", "ТОО «КаР-Тел» · Beeline": "ТОО «КаР-Тел» · Beeline", "Подключение интернета, прокладка кабеля, роутеры, модемы, приставки, коммутаторы, консультации по услугам связи.": "Интернет қосу, кабель тарту, роутерлермен, модемдермен, приставкалармен және коммутаторлармен жұмыс істеу, байланыс қызметтері бойынша кеңес беру.", "Март 2023": "2023 жылғы наурыз", "Производственная практика": "Өндірістік практика", "РГП «Госградкадастр»": "РГП «Госградкадастр»", "Управление цифровизации и информационной безопасности.": "Цифрландыру және ақпараттық қауіпсіздік басқармасы.", "Инструменты": "Міндетке сай", "под задачу.": "құралдар.", "От журналов событий и SQL-запросов": "Оқиғалар журналдары мен SQL сұрауларынан", "до скриптов мониторинга и регламентов.": "мониторинг скрипттері мен регламенттерге дейін.", "Мониторинг и события": "Мониторинг және оқиғалар", "Операционные системы": "Операциялық жүйелер", "Базы данных": "Дерекқорлар", "Скрипты": "Скрипттер", "Интеграции": "Интеграциялар", "базовые знания": "базалық білім", "Профессиональная документация": "Кәсіби құжаттама", "Требования и ТЗ": "Талаптар және техникалық тапсырмалар", "Регламенты": "Регламенттер", "Отчёты и акты": "Есептер мен актілер", "Официальная переписка": "Ресми хат алмасу", "За пределами ежедневных задач / AI": "Күнделікті міндеттерден тыс / AI", "Участник международного AI-хакатона, установившего рекорд Guinness World Records по числу участников.": "Қатысушылар саны бойынша Guinness World Records рекордын орнатқан халықаралық AI-хакатонға қатыстым.", "23 сентября 2026": "2026 жылғы 23 қыркүйек", "Астана": "Астана", "Участник": "Қатысушы", "Участников. Один хакатон.": "Қатысушылар. Бір хакатон.", "Guinness World Records · 2 415 участников": "Guinness World Records · 2 415 қатысушы", "Образование и развитие": "Білім және даму", "Учиться.": "Үйрену.", "Применять.": "Қолдану.", "Предыдущие сертификаты": "Алдыңғы сертификаттар", "Следующие сертификаты": "Келесі сертификаттар", "Обучение и сертификаты по годам, горизонтальная прокрутка": "Жылдар бойынша оқу курстары мен сертификаттар, көлденең жылжыту", "Основы кибербезопасности": "Киберқауіпсіздік негіздері", "Инфраструктура и защита": "Инфрақұрылым және қорғаныс", "Безопасность, код и AI": "Қауіпсіздік, код және AI", "Endpoint Security; Python Essentials 1 и 2; Introduction to Modern AI": "Endpoint Security; Python Essentials 1 және 2; Introduction to Modern AI", "Терминал Linux. Основы; Docker для начинающих": "Linux терминалы. Негіздері; Жаңадан бастаушыларға арналған Docker", "Основы промпт-инжиниринга": "Промпт-инжиниринг негіздері", "Основы ИИ": "ЖИ негіздері", "Листайте карточки в сторону или используйте стрелки →": "Карточкаларды жанға сырғытыңыз немесе көрсеткілерді пайдаланыңыз →", "В процессе:": "Оқып жатырмын:", "Высшее образование": "Жоғары білім", "Кибербезопасность": "Киберқауіпсіздік", "Дипломная работа · целевой фишинг": "Дипломдық жұмыс · нысаналы фишинг", "«Разработка метода по анализу техник противодействия целевой фишинговой атаке».": "«Нысаналы фишинг шабуылына қарсы әрекет ету тәсілдерін талдау әдісін әзірлеу».", "Языки": "Тілдер", "Казахский": "Қазақ тілі", "родной": "ана тілі", "Русский": "Орыс тілі", "свободный": "еркін", "Английский": "Ағылшын тілі", "разговорный": "ауызекі деңгей", "Давайте обсудим": "Инфрақұрылымыңыздың", "безопасность": "қауіпсіздігін", "вашей инфраструктуры": "талқылайық", "Telegram @adil10961, откроется в новой вкладке": "Telegram @adil10961, жаңа қойындыда ашылады", "Скачать резюме (PDF)": "Түйіндемені жүктеу (PDF)", "Вернуться к началу": "Басына оралу", "Адиль Сарсембек": "Адиль Сарсембек", "Астана, Казахстан · Работа в офисе": "Астана, Қазақстан · Кеңседе жұмыс істеу", "Готов к командировкам ·": "Іссапарларға дайынмын ·", "Автоматизация": "Автоматтандыру", "Анимации включены": "Анимация қосулы", "Анимации выключены": "Анимация өшірулі", "Базовые знания SOAP / REST API. Диагностирую интеграционные сервисы по журналам событий и SQL-данным.": "SOAP / REST API бойынша базалық білімім бар. Интеграциялық сервистерді оқиғалар журналдары мен SQL деректері арқылы диагностикалаймын.", "Быстрые действия": "Жылдам әрекеттер", "Включить анимации": "Анимацияны қосу", "Выделите и скопируйте текст ниже.": "Төмендегі мәтінді белгілеп, көшіріңіз.", "Готово": "Дайын", "Дорабатываю скрипты Python и Bash для задач мониторинга.": "Мониторинг міндеттері үшін Python және Bash скрипттерін жетілдіремін.", "Закрыть": "Жабу", "Инциденты": "Инциденттер", "Использую SQL-запросы при диагностике интеграционных сервисов и мониторинге информационных систем.": "Интеграциялық сервистерді диагностикалау және ақпараттық жүйелерді мониторингтеу кезінде SQL сұрауларын қолданамын.", "Код этого сайта": "Осы сайттың коды", "Мониторинг": "Мониторинг", "Найти обучение": "Оқу курсын іздеу", "Например, Cisco или Python": "Мысалы, Cisco немесе Python", "Настраиваю PRTG, подключаю новые объекты и сопровождаю мониторинг информационных систем.": "PRTG баптаймын, жаңа нысандарды қосамын және ақпараттық жүйелердің мониторингін сүйемелдеймін.", "Настройки отображения": "Көрініс баптаулары", "Настройки сохраняются на этом устройстве.": "Баптаулар осы құрылғыда сақталады.", "Ничего не найдено. Попробуйте другое название или год.": "Ештеңе табылмады. Басқа атауды немесе жылды енгізіп көріңіз.", "Обучение": "Оқу", "Поделиться сайтом": "Сайтпен бөлісу", "Применение в работе": "Жұмыста қолдану", "Светлая": "Ашық", "Связаться": "Хабарласу", "Системная": "Жүйелік", "Скопировано": "Көшірілді", "Скопировать email": "Email көшіру", "Скопировать вручную": "Қолмен көшіру", "Скопировать телефон": "Телефон нөмірін көшіру", "Сохранить контакт": "Контактіні сақтау", "Ссылка скопирована": "Сілтеме көшірілді", "Текст для копирования": "Көшірілетін мәтін", "Тема оформления": "Безендіру тақырыбы", "Тёмная": "Қараңғы", "Язык сайта": "Сайт тілі", "ҚАЗ": "ҚАЗ", "Резюме PDF · RU": "Түйіндеме PDF · RU", "Скачать резюме (PDF · RU)": "Түйіндемені жүктеу (PDF · RU)"}}</script>
+<script>
+(() => {
+  'use strict';
+  const translations = JSON.parse(document.getElementById('translations').textContent);
+  const read = key => { try { return localStorage.getItem(key); } catch { return null; } };
+  const save = (key,value) => { try { localStorage.setItem(key,value); } catch {} };
+  const root = document.documentElement;
+  const media = matchMedia('(prefers-reduced-motion: reduce)');
+  const colorMedia = matchMedia('(prefers-color-scheme: light)');
+  const languages = ['ru','en','kk'];
+  let language = 'ru', toastTimer, framePending = false;
+  let motionOff = read('as-motion') ? read('as-motion') === 'off' : media.matches;
+  const header = document.querySelector('.topbar');
+  const menu = document.getElementById('menu-toggle');
+  const preferences = document.getElementById('preferences');
+  const languageSelect = document.getElementById('language-select');
+  const motionButton = document.getElementById('motion-toggle');
+  const toast = document.getElementById('toast');
+  const dock = document.getElementById('mobile-dock');
+  const heroActions = document.getElementById('hero-actions');
+  const contact = document.getElementById('contact');
+  const textNodes = [];
+  const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+  while(walker.nextNode()) {
+    const node=walker.currentNode;
+    if(!node.parentElement.closest('script,style,[data-no-translate]') && /[А-Яа-яЁё]/.test(node.nodeValue)) textNodes.push([node,node.nodeValue]);
+  }
+  const attributes=[];
+  document.querySelectorAll('[aria-label],[title],[alt],[placeholder],meta[content]').forEach(element=>{
+    for(const attr of ['aria-label','title','alt','content','placeholder']) {
+      const value=element.getAttribute(attr);
+      if(value && /[А-Яа-яЁё]/.test(value)) attributes.push([element,attr,value]);
     }
-    addEventListener('scroll',updateProgress,{passive:true});
-    addEventListener('resize',updateProgress,{passive:true});
-    updateProgress();
-    const navLinks = [...document.querySelectorAll('.nav-links a')];
-    const sections = navLinks.map(link=>document.querySelector(link.getAttribute('href')));
-    function updateNav(){
-      let active = sections[0];
-      for(const section of sections) if(section.getBoundingClientRect().top<=innerHeight*.42) active=section;
-      navLinks.forEach(link=>{if(link.hash==='#'+active.id)link.setAttribute('aria-current','location');else link.removeAttribute('aria-current')});
-    }
-    addEventListener('scroll',updateNav,{passive:true});updateNav();
-    // Нативные ссылки сохраняют работу клавиатуры, истории и прямых якорей без JS.
-    document.querySelectorAll('a[href^="#"]').forEach(link=>link.addEventListener('click',event=>{
-      const target=document.querySelector(link.getAttribute('href'));
-      if(!target)return;
-      event.preventDefault();
-      closeMenu();
-      history.pushState(null,'',link.getAttribute('href'));
-      const focusTarget=()=>{target.setAttribute('tabindex','-1');target.focus({preventScroll:true});};
-      if(lenis) lenis.scrollTo(target,{offset:-header.offsetHeight-16,duration:.9,onComplete:focusTarget});
-      else {target.scrollIntoView({behavior:paused?'instant':'smooth',block:'start'});focusTarget();}
-    }));
-    const certTrack=document.getElementById('cert-track');
-    function scrollCerts(direction){const card=certTrack.querySelector('.cert-card');certTrack.scrollBy({left:direction*(card.offsetWidth+parseFloat(getComputedStyle(certTrack).columnGap)),behavior:paused?'instant':'smooth'});}
-    document.getElementById('cert-prev').addEventListener('click',()=>scrollCerts(-1));
-    document.getElementById('cert-next').addEventListener('click',()=>scrollCerts(1));
-    certTrack.addEventListener('keydown',event=>{if(event.key==='ArrowRight'||event.key==='ArrowLeft'){event.preventDefault();scrollCerts(event.key==='ArrowRight'?1:-1);}});
-    function updateCertControls(){document.getElementById('cert-prev').disabled=certTrack.scrollLeft<2;document.getElementById('cert-next').disabled=certTrack.scrollLeft+certTrack.clientWidth>=certTrack.scrollWidth-2;}
-    certTrack.addEventListener('scroll',updateCertControls,{passive:true});addEventListener('resize',updateCertControls);updateCertControls();
-    document.fonts?.ready.then(()=>{updateCertControls();window.ScrollTrigger?.refresh();});
-    document.querySelectorAll('.thesis').forEach(detail=>detail.addEventListener('toggle',()=>{window.ScrollTrigger?.refresh();updateProgress();}));
-    const format=value=>Math.round(value).toLocaleString('ru-RU');
-    function resetCounters(){document.querySelectorAll('[data-counter]').forEach(el=>el.textContent=el.dataset.counter==='range'?'15–20':format(Number(el.dataset.counter)));}
-    function stopMotion(){
-      clearInterval(typeTimer);typed.textContent=fullRole;
-      if(ticker&&window.gsap)gsap.ticker.remove(ticker);
-      ticker=null;if(lenis){lenis.destroy();lenis=null;}
-      if(cursorTick&&window.gsap)gsap.ticker.remove(cursorTick);cursorTick=null;
-      if(gsapContext){gsapContext.revert();gsapContext=null;}
-      resetCounters();document.body.classList.remove('cursor-enabled');
-      if(window.gsap)gsap.killTweensOf('.magnetic,.chip,.portrait');
-      document.querySelectorAll('.magnetic,.chip,.portrait').forEach(el=>el.style.transform='');
-      document.querySelector('.scan').style.opacity='0';
-    }
-    function startMotion(first=false){
-      if(paused||!window.gsap||!window.ScrollTrigger)return;
-      gsap.registerPlugin(ScrollTrigger);
-      const mobile=mobileQuery.matches;
-      gsapContext=gsap.context(()=>{
-        if(first){
-          gsap.from('.name-line>span',{yPercent:108,opacity:0,duration:mobile ? .55 : .9,stagger:mobile ? .06 : .13,ease:'power4.out',delay:mobile ? .05 : .7});
-          gsap.from('.hero-entrance',{y:mobile?12:24,opacity:0,duration:mobile ? .5 : .8,stagger:mobile ? .04 : .09,ease:'power3.out',delay:mobile ? .12 : .9});
-          if(!mobile)gsap.fromTo('.scan',{y:0,opacity:0},{y:document.getElementById('portrait').offsetHeight,opacity:.65,duration:.9,delay:1.1,ease:'power2.inOut',onComplete:()=>gsap.set('.scan',{opacity:0})});
-          if(!mobile){typed.textContent='';let n=0;typeTimer=setInterval(()=>{typed.textContent=fullRole.slice(0,++n);if(n>=fullRole.length)clearInterval(typeTimer);},22);}
-        }
-        document.querySelectorAll('[data-reveal]').forEach(el=>{
-          // При повторном включении движения уже прочитанные секции остаются видимыми.
-          if(!first&&el.getBoundingClientRect().top<innerHeight)return;
-          gsap.from(el,{y:mobile?12:27,opacity:0,duration:mobile ? .5 : .75,ease:'power3.out',scrollTrigger:{trigger:el,start:'top 94%',once:true}});
-        });
-        if(!mobile)gsap.to('.timeline-fill',{scaleY:1,ease:'none',scrollTrigger:{trigger:'.timeline',start:'top 65%',end:'bottom 72%',scrub:.6}});
-        document.querySelectorAll('[data-counter]').forEach(el=>{
-          const isRange=el.dataset.counter==='range',value={n:0};
-          gsap.to(value,{n:isRange?20:Number(el.dataset.counter),duration:.9,ease:'power3.out',scrollTrigger:{trigger:el,start:'top 92%',once:true},onUpdate:()=>{el.textContent=isRange?`${Math.round(value.n*.75)}–${Math.round(value.n)}`:format(value.n);}});
-        });
-        if(!mobile)document.querySelectorAll('.chips').forEach(row=>gsap.from(row.children,{y:8,opacity:0,duration:.5,stagger:.045,ease:'power3.out',scrollTrigger:{trigger:row,start:'top 94%',once:true}}));
-      });
-      if(window.Lenis&&finePointer.matches){
-        lenis=new Lenis({duration:1.05,smoothWheel:true,syncTouch:false,anchors:false});
-        lenis.on('scroll',ScrollTrigger.update);ticker=time=>lenis?.raf(time*1000);gsap.ticker.add(ticker);
-      }
-      if(finePointer.matches)startCursor();
-      ScrollTrigger.refresh();
-    }
-    const cursor=document.querySelector('.cursor');
-    let mouseX=innerWidth/2,mouseY=innerHeight/2,cursorX=mouseX,cursorY=mouseY;
-    function startCursor(){
-      document.body.classList.add('cursor-enabled');
-      cursorTick=()=>{cursorX+=(mouseX-cursorX)*.16;cursorY+=(mouseY-cursorY)*.16;cursor.style.transform=`translate3d(${cursorX}px,${cursorY}px,0) translate(-50%,-50%)`;};
-      gsap.ticker.add(cursorTick);
-    }
-    addEventListener('pointermove',event=>{if(paused||!finePointer.matches)return;mouseX=event.clientX;mouseY=event.clientY;cursor.style.opacity='.65';cursor.classList.toggle('is-link',!!event.target.closest('a,button,summary'));},{passive:true});
-    document.documentElement.addEventListener('pointerleave',()=>cursor.style.opacity='0');
-    document.querySelectorAll('.magnetic,.chip,#portrait').forEach(el=>{
-      el.addEventListener('pointermove',event=>{
-        if(paused||!finePointer.matches||!window.gsap)return;
-        const rect=el.getBoundingClientRect(),x=(event.clientX-rect.left)/rect.width-.5,y=(event.clientY-rect.top)/rect.height-.5;
-        if(el.classList.contains('chip'))gsap.to(el,{rotateX:-y*8,rotateY:x*8,y:-2,duration:.5,ease:'power3.out',overwrite:true});
-        else gsap.to(el,{x:x*(el.id==='portrait'?8:10),y:y*(el.id==='portrait'?8:10),duration:.5,ease:'power3.out',overwrite:true});
-      });
-      el.addEventListener('pointerleave',()=>{if(!window.gsap||!finePointer.matches)return;if(paused){gsap.killTweensOf(el);el.style.transform='';return;}gsap.to(el,{x:0,y:0,rotateX:0,rotateY:0,duration:.6,ease:'power3.out',overwrite:true});});
-    });
-    function updateMotionUI(){
-      document.documentElement.classList.toggle('motion-paused',paused);
-      motionButton.setAttribute('aria-pressed',String(paused));
-      motionButton.setAttribute('aria-label',paused?'Включить анимации':'Приостановить анимации');
-      motionButton.title=paused?'Включить анимации':'Приостановить анимации';
-      document.getElementById('motion-symbol').textContent=paused?'▷':'Ⅱ';
-    }
-    motionButton.addEventListener('click',()=>{paused=!paused;updateMotionUI();if(paused)stopMotion();else startMotion();});
-    reduceQuery.addEventListener('change',event=>{paused=event.matches;document.documentElement.classList.toggle('reduced',paused);updateMotionUI();stopMotion();if(!paused)startMotion();});
-    finePointer.addEventListener('change',()=>{stopMotion();if(!paused)startMotion();});
-    mobileQuery.addEventListener('change',()=>{closeMenu();stopMotion();if(!paused)startMotion();});
-    updateMotionUI();
-    // defer-скрипты готовы к DOMContentLoaded; при ошибке CDN запускается статическая версия.
-    function init(){if(!paused)startMotion(true);setTimeout(()=>document.querySelector('.loader')?.remove(),1200);}
-    if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init,{once:true});else init();
-  })();
-  </script>
+  });
+  const originalTitle=document.title;
+  const t = source => language==='ru' ? source : translations[language]?.[source] || source;
+  function announce(source) {
+    clearTimeout(toastTimer); toast.textContent=t(source); toast.hidden=false;
+    toastTimer=setTimeout(()=>{toast.hidden=true;},3200);
+  }
+  function closeMenu(returnFocus=false) {header.classList.remove('menu-open');menu.setAttribute('aria-expanded','false');if(returnFocus)menu.focus();}
+  function updateMotion() {
+    root.classList.toggle('motion-paused',motionOff);
+    root.style.scrollBehavior=motionOff?'auto':'';
+    motionButton.setAttribute('aria-pressed',String(motionOff));
+    motionButton.setAttribute('aria-label',t(motionOff?'Включить анимации':'Приостановить анимации'));
+    document.getElementById('motion-label').textContent=t(motionOff?'Анимации выключены':'Анимации включены');
+    document.getElementById('motion-symbol').textContent=motionOff?'▷':'Ⅱ';
+    if(motionOff)document.querySelectorAll('.reveal-pending').forEach(el=>el.classList.remove('reveal-pending'));
+  }
+  function setTheme(theme,persist=false) {
+    const value=['system','light','dark'].includes(theme)?theme:'system';
+    if(value==='system')delete root.dataset.theme;else root.dataset.theme=value;
+    document.querySelectorAll('[name="theme"]').forEach(input=>input.checked=input.value===value);
+    const dark=value==='dark'||(value==='system'&&!colorMedia.matches);
+    document.querySelector('meta[name="theme-color"]').content=dark?'#101210':'#f3f4ed';
+    if(persist)save('as-theme',value);
+  }
+  function setLanguage(next,persist=false) {
+    language=languages.includes(next)?next:'ru';root.lang=language;languageSelect.value=language;
+    textNodes.forEach(([node,original])=>{const source=original.trim();node.nodeValue=original.replace(source,t(source));});
+    attributes.forEach(([element,attr,value])=>element.setAttribute(attr,t(value)));
+    document.title=t(originalTitle);
+    document.querySelector('meta[property="og:locale"]').content={ru:'ru_RU',en:'en_US',kk:'kk_KZ'}[language];
+    updateMotion();filterCertificates();updateCertControls();scheduleScroll();
+    if(persist){save('as-language',language);const url=new URL(location.href);if(language==='ru')url.searchParams.delete('lang');else url.searchParams.set('lang',language);history.replaceState(null,'',url);}
+  }
+  function updateScroll() {
+    framePending=false;
+    const max=document.documentElement.scrollHeight-innerHeight;
+    document.querySelector('.progress').style.transform=`scaleX(${max>0?Math.min(1,Math.max(0,scrollY/max)):0})`;
+    const links=[...document.querySelectorAll('.nav-links a')];let active=links[0];
+    links.forEach(link=>{const target=document.querySelector(link.hash);if(target&&target.getBoundingClientRect().top<=header.offsetHeight+120)active=link;});
+    links.forEach(link=>{if(link===active)link.setAttribute('aria-current','location');else link.removeAttribute('aria-current');});
+    const contactRect=contact.getBoundingClientRect();
+    const show=innerWidth<=760&&heroActions.getBoundingClientRect().bottom<header.offsetHeight&&!(contactRect.top<innerHeight&&contactRect.bottom>0);
+    if(!dock.contains(document.activeElement))dock.hidden=!show;
+  }
+  function scheduleScroll(){if(!framePending){framePending=true;requestAnimationFrame(updateScroll);}}
+  menu.addEventListener('click',()=>{const open=menu.getAttribute('aria-expanded')!=='true';header.classList.toggle('menu-open',open);menu.setAttribute('aria-expanded',String(open));if(open)preferences.open=false;});
+  preferences.addEventListener('toggle',()=>{if(preferences.open)closeMenu();});
+  document.addEventListener('click',event=>{if(!header.contains(event.target))closeMenu();if(!preferences.contains(event.target))preferences.open=false;});
+  document.addEventListener('keydown',event=>{if(event.key==='Escape'){if(preferences.open){preferences.open=false;preferences.querySelector('summary').focus();}if(header.classList.contains('menu-open'))closeMenu(true);}});
+  languageSelect.addEventListener('change',()=>setLanguage(languageSelect.value,true));
+  document.querySelectorAll('[name="theme"]').forEach(input=>input.addEventListener('change',()=>setTheme(input.value,true)));
+  colorMedia.addEventListener('change',()=>setTheme(read('as-theme')||'system'));
+  motionButton.addEventListener('click',()=>{motionOff=!motionOff;save('as-motion',motionOff?'off':'on');updateMotion();});
+  media.addEventListener('change',()=>{if(!read('as-motion')){motionOff=media.matches;updateMotion();}});
+  document.querySelectorAll('a[href^="#"]').forEach(link=>link.addEventListener('click',event=>{
+    const target=document.getElementById(link.hash.slice(1));if(!target)return;
+    event.preventDefault();closeMenu();preferences.open=false;
+    history.pushState(null,'',link.hash);
+    const top=target.getBoundingClientRect().top+scrollY-header.offsetHeight-18;
+    window.scrollTo({top:Math.max(0,top),behavior:motionOff?'instant':'smooth'});
+    target.setAttribute('tabindex','-1');target.focus({preventScroll:true});
+  }));
+  const certTrack=document.getElementById('cert-track');
+  const search=document.getElementById('cert-search');
+  const cards=[...certTrack.querySelectorAll('.cert-card')];
+  function filterCertificates(){
+    const query=search.value.trim().toLocaleLowerCase();let any=false;
+    cards.forEach(card=>{let matched=0;const heading=card.querySelector('.year').textContent+' '+card.querySelector('h3').textContent;card.querySelectorAll('li').forEach(li=>{const show=!query||(heading+' '+li.textContent).toLocaleLowerCase().includes(query);li.hidden=!show;if(show)matched++;});card.hidden=matched===0;if(matched)any=true;});
+    document.getElementById('cert-empty').hidden=any;certTrack.hidden=!any;
+    certTrack.scrollLeft=0;updateCertControls();
+  }
+  function updateCertControls(){document.getElementById('cert-prev').disabled=certTrack.hidden||certTrack.scrollLeft<2;document.getElementById('cert-next').disabled=certTrack.hidden||certTrack.scrollLeft+certTrack.clientWidth>=certTrack.scrollWidth-2;}
+  function scrollCerts(direction){const card=cards.find(card=>!card.hidden);if(card)certTrack.scrollBy({left:direction*(card.offsetWidth+parseFloat(getComputedStyle(certTrack).columnGap)),behavior:motionOff?'instant':'smooth'});}
+  search.addEventListener('input',filterCertificates);
+  document.getElementById('cert-prev').addEventListener('click',()=>scrollCerts(-1));document.getElementById('cert-next').addEventListener('click',()=>scrollCerts(1));
+  certTrack.addEventListener('scroll',updateCertControls,{passive:true});
+  certTrack.addEventListener('keydown',event=>{if(event.key==='ArrowRight'||event.key==='ArrowLeft'){event.preventDefault();scrollCerts(event.key==='ArrowRight'?1:-1);}});
+  const dialog=document.getElementById('copy-dialog'), copyValue=document.getElementById('copy-value');
+  let copyTrigger;
+  async function copyText(value,success,trigger){
+    try {if(!navigator.clipboard?.writeText)throw Error('clipboard unavailable');await navigator.clipboard.writeText(value);announce(success);}
+    catch {copyTrigger=trigger;copyValue.value=value;dialog.showModal();copyValue.focus();copyValue.select();}
+  }
+  document.querySelectorAll('[data-copy]').forEach(button=>button.addEventListener('click',()=>copyText(button.dataset.copy,'Скопировано',button)));
+  document.querySelectorAll('[data-close-dialog]').forEach(button=>button.addEventListener('click',()=>dialog.close()));
+  dialog.addEventListener('close',()=>copyTrigger?.focus());
+  document.getElementById('share-site').addEventListener('click',async event=>{
+    const trigger=event.currentTarget;
+    const payload={title:document.title,url:location.href};
+    if(navigator.share){try{await navigator.share(payload);return;}catch(error){if(error.name==='AbortError')return;}}
+    await copyText(payload.url,'Ссылка скопирована',trigger);
+  });
+  addEventListener('scroll',scheduleScroll,{passive:true});
+  addEventListener('resize',()=>{if(innerWidth>760)closeMenu();scheduleScroll();updateCertControls();});
+  document.fonts?.ready.then(()=>{updateCertControls();scheduleScroll();});
+  document.querySelectorAll('details').forEach(detail=>detail.addEventListener('toggle',scheduleScroll));
+  if('IntersectionObserver' in window && !motionOff){const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.remove('reveal-pending');entry.target.classList.add('reveal-visible');observer.unobserve(entry.target);}}),{threshold:.08});document.querySelectorAll('[data-reveal]').forEach(el=>{if(el.getBoundingClientRect().top>innerHeight){el.classList.add('reveal-pending');observer.observe(el);}});}
+  setTheme(read('as-theme')||'system');
+  const requested=new URL(location.href).searchParams.get('lang');
+  setLanguage(languages.includes(requested)?requested:read('as-language')||'ru');
+  updateMotion();updateScroll();updateCertControls();
+})();
+
+</script>
 </body>
 </html>

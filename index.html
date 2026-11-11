@@ -287,7 +287,7 @@ body{font-feature-settings:"ss01";background:var(--bg)}.wrap{max-width:1536px}.t
           <div class="prefs-panel"><fieldset><legend>Тема оформления</legend><div class="theme-options"><label class="theme-option"><input type="radio" name="theme" value="system" checked><span>Системная</span></label><label class="theme-option"><input type="radio" name="theme" value="light"><span>Светлая</span></label><label class="theme-option"><input type="radio" name="theme" value="dark"><span>Тёмная</span></label></div></fieldset>
           <button class="motion-control" id="motion-toggle" type="button" aria-label="Приостановить анимации" aria-pressed="false"><span id="motion-label">Анимации включены</span><span id="motion-symbol" aria-hidden="true">Ⅱ</span></button><p class="prefs-note">Настройки сохраняются на этом устройстве.</p></div>
         </details>
-        <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="main-navigation"><span>Меню</span><span class="menu-icon" aria-hidden="true"></span></button><a class="nav-resume" href="#resume-downloads">Резюме PDF <span aria-hidden="true">↓</span></a>
+        <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="main-navigation"><span>Меню</span><span class="menu-icon" aria-hidden="true"></span></button><a class="nav-resume" href="resume-en.pdf" download="Adil-Sarsembek-Resume-EN.pdf" hreflang="en" data-resume-current>Резюме PDF <span aria-hidden="true">↓</span></a>
       </div>
     </div><div class="progress" aria-hidden="true"></div>
   </header>
@@ -298,7 +298,7 @@ body{font-feature-settings:"ss01";background:var(--bg)}.wrap{max-width:1536px}.t
         <div class="eyebrow mono"><span class="eyebrow-left"><span class="status-dot" aria-hidden="true"></span>Информационная безопасность</span><span class="location">Астана, Казахстан / KZ</span></div>
         <div class="hero-grid">
 <div class="hero-intro"><h1 id="name"><span class="name-line"><span>Адиль</span></span><span class="name-line"><span>Сарсембек</span></span></h1><p class="role">Специалист по информационной безопасности</p><div class="hero-specialties mono"><span>Мониторинг</span><span>Инциденты</span><span>Автоматизация</span></div></div>
-<div class="hero-buttons hero-entrance" id="hero-actions"><a class="button button-primary magnetic" href="#contact">Связаться со мной <span class="arrow" aria-hidden="true">↗</span></a><a class="button magnetic" href="#resume-downloads">Резюме PDF <span class="arrow" aria-hidden="true">↓</span></a></div>
+<div class="hero-buttons hero-entrance" id="hero-actions"><a class="button button-primary magnetic" href="#contact">Связаться со мной <span class="arrow" aria-hidden="true">↗</span></a><a class="button magnetic" href="resume-en.pdf" download="Adil-Sarsembek-Resume-EN.pdf" hreflang="en" data-resume-current>Резюме PDF <span class="arrow" aria-hidden="true">↓</span></a></div>
           <div class="portrait-wrap hero-entrance">
 <div class="signal-visual" aria-hidden="true"><svg viewBox="0 0 600 600" fill="none"><g class="signal-rings"><circle cx="300" cy="300" r="244"/><circle cx="300" cy="300" r="194"/><circle cx="300" cy="300" r="142"/><path d="M300 28v66m0 412v66M28 300h66m412 0h66"/><path class="signal-orbit" d="M300 56a244 244 0 0 1 244 244"/></g><g class="signal-nodes"><circle cx="300" cy="56" r="5"/><circle cx="544" cy="300" r="5"/><circle cx="300" cy="544" r="3"/><circle cx="56" cy="300" r="3"/></g></svg><span class="signal-coordinate signal-coordinate-top">01 / AS</span><span class="signal-coordinate signal-coordinate-bottom">INFORMATION SECURITY</span></div>
             <!-- ФОТО: исходный цветной portrait.png рядом с index.html. Цветовой фильтр не применяется. -->
@@ -387,7 +387,7 @@ body{font-feature-settings:"ss01";background:var(--bg)}.wrap{max-width:1536px}.t
       <div class="footer"><div class="footer-left"><a href="#home" class="brand-mark" aria-label="Вернуться к началу">АС</a><p class="mono">Адиль Сарсембек<br><a href="mailto:adil04@Inbox.ru">adil04@Inbox.ru</a></p></div><div class="footer-right"><p>Астана, Казахстан · Работа в офисе</p><p>Готов к командировкам · <a href="https://t.me/adil10961">@adil10961</a></p></div></div>
     </section>
   </main>
-  <nav class="mobile-dock" id="mobile-dock" aria-label="Быстрые действия" hidden><a class="button button-primary" href="#contact">Связаться <span aria-hidden="true">↗</span></a><a class="button" href="#resume-downloads">PDF <span aria-hidden="true">↓</span></a></nav>
+  <nav class="mobile-dock" id="mobile-dock" aria-label="Быстрые действия" hidden><a class="button button-primary" href="#contact">Связаться <span aria-hidden="true">↗</span></a><a class="button" href="resume-en.pdf" download="Adil-Sarsembek-Resume-EN.pdf" hreflang="en" data-resume-current>PDF <span aria-hidden="true">↓</span></a></nav>
   <div id="toast" class="toast" role="status" aria-live="polite" data-no-translate hidden></div>
   <dialog id="copy-dialog" class="copy-dialog" aria-labelledby="copy-title"><div class="dialog-head"><h2 id="copy-title">Скопировать вручную</h2><button class="icon-button" type="button" data-close-dialog aria-label="Закрыть">×</button></div><p>Выделите и скопируйте текст ниже.</p><input id="copy-value" type="text" readonly aria-label="Текст для копирования"><button class="button" type="button" data-close-dialog>Готово</button></dialog>
 
@@ -566,13 +566,14 @@ body{font-feature-settings:"ss01";background:var(--bg)}.wrap{max-width:1536px}.t
   function setLanguage(next,persist=false) {
     const realign=anchorPinned||anchorIsNear();
     cancelAnimations();
-    language=languages.includes(next)?next:'ru';root.lang=language;languageSelect.value=language;
+    language=languages.includes(next)?next:'en';root.lang=language;languageSelect.value=language;
     textNodes.forEach(([node,original])=>{const source=original.trim();node.nodeValue=original.replace(source,t(source));});
     attributes.forEach(([element,attr,value])=>element.setAttribute(attr,t(value)));
     document.title=t(originalTitle);
     document.querySelector('meta[property="og:locale"]').content={ru:'ru_RU',en:'en_US',kk:'kk_KZ'}[language];
+    document.querySelectorAll('[data-resume-current]').forEach(link=>{link.href=`resume-${language}.pdf`;link.download=`Adil-Sarsembek-Resume-${language.toUpperCase()}.pdf`;link.hreflang=language;});
     updateMotion();filterCertificates();updateCertControls();scheduleScroll();
-    if(persist){save('as-language',language);const url=new URL(location.href);if(language==='ru')url.searchParams.delete('lang');else url.searchParams.set('lang',language);history.replaceState(null,'',url);}
+    if(persist){save('as-language',language);const url=new URL(location.href);if(language==='en')url.searchParams.delete('lang');else url.searchParams.set('lang',language);history.replaceState(null,'',url);}
     if(realign){anchorPinned=true;scheduleHashAlignment();}
   }
   function updateScroll() {
@@ -724,7 +725,7 @@ body{font-feature-settings:"ss01";background:var(--bg)}.wrap{max-width:1536px}.t
   }
   setTheme(read('as-theme')||'system');
   const requested=new URL(location.href).searchParams.get('lang');
-  setLanguage(languages.includes(requested)?requested:read('as-language')||'ru');
+  setLanguage(languages.includes(requested)?requested:read('as-language')||'en');
   motionReady=true;
   updateMotion();observeReveals();scheduleScroll();updateCertControls();
   runIntro();scheduleHashAlignment();
